@@ -1,0 +1,31 @@
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix la: <https://linked.art/ns/terms/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+
+# 编号02 天尹钟流传事件
+bp:02
+    a crm:E7_Activity ;
+    rdfs:label "天尹钟流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:002;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南省洛阳市" ;
+            la:equivalent tgn:8627225] 
+    ].
+
+aat:300055863
+    a crm:E55_Type ;
+    rdfs:label "Provenance Activity" .
+
+aat:300053702
+    a crm:E55_Type ;
+    rdfs:label "excavation" .

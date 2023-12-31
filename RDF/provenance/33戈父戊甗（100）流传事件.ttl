@@ -1,0 +1,77 @@
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+
+# 编号33 戈父戊甗流传事件
+bp:33
+    a crm:E7_Activity ;
+    rdfs:label "戈父戊甗流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:100;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1975"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ];
+        crm:P22_transferred_title_to 
+        [   a crm:E74_Group ;
+            rdfs:label "J.T. Tai & Co., Inc." ;
+            crm:P2_has_type aat:300160084
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1975"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ];
+        crm:P22_transferred_title_to 
+        [   a crm:E74_Group ;
+            rdfs:label "The Arthur M. Sackler Foundation" 
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group ;
+            rdfs:label "J.T. Tai & Co., Inc." ;
+            crm:P2_has_type aat:300160084
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1987"
+        ];
+        crm:P22_transferred_title_to ba:06 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group ;
+            rdfs:label "Arthur M. Sackler Foundation" 
+        ]
+    ]
+.
+
+aat:300055863
+    a crm:E55_Type ;
+    rdfs:label "Provenance Activity" .
+
+aat:300053702;
+    a crm:E55_Type ;
+    rdfs:label "excavation" .
+
+aat:300160084
+    a crm:E55_Type ;
+    rdfs:label "companies" .

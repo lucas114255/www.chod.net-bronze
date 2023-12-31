@@ -1,0 +1,129 @@
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix bso: <http://www.chod.net/bronze/source/>.
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bvp: <http://www.chod.net/bronze/vocabulary/period>. 
+@prefix bvt: <http://www.chod.net/bronze/vocabulary/type/>.
+@prefix bvd: <http://bronzeoversea.com/vocabulary/decorations/>.
+@prefix bvs: <http://www.chod.net/bronze/vocabulary/subject/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix ulan: <http://vocab.getty.edu/page/ulan/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dig: <http://www.ics.forth.gr/isl/CRMdig/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix mime: <http://www.iana.org/assignments/media-types/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix la: <https://linked.art/ns/terms/>.
+
+# 青铜器物件120
+bo:120
+    a crm:E22_Human-Made_Object ;
+    crm:P1_is_identified_by
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "象尊" ; 
+            crm:P72_has_language aat:300388113 ;
+            crm:P2_has_type aat:300404670 ] ,
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Zun Camondo" ;
+            crm:P72_has_language aat:300388277 ] ,
+        [ a crm:E42_Identifier ;
+            crm:P190_has_symbolic_content "EO 1545" ;  
+            crm:P2_has_type aat:300312355 ] ;
+    crm:P43_has_dimension
+        [ a crm:E54_Dimension ;
+            crm:P2_has_type aat:300055624 ;
+            crm:P90_has_value 64 ;
+            crm:P91_has_unit aat:300379098 ;
+            rdfs:label "H." ] ;
+    crm:P67i_is_referred_to_by
+        [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content " Ce monumental éléphant dressé sur ses quatre pattes, trompe relevée, est en fait un récipient. L’intérieur est vide et pouvait être rempli par une ouverture carrée pratiquée sur le dos, et dont le couvercle a aujourd’hui disparu. Ses flancs portent un décor de taotie étendu en bas relief rubané sur fond tapissant de leiwen. Ces motifs sont peu à peu remplacés par des écailles qui apparaissent ici sur les oreilles, la trompe, le ventre et les pattes. Le volume zoomorphe affirmé et le déclin de l’ornementation sont caractéristiques de la production du Hunan, en Chine du Sud, où une volonté d’indépendance régionale s’établit aux dépends des conventions en usage dans la capitale d’Anyang au Henan. Leur influence aurait même fini par gagner les productions officielles du Nord comme en témoigne un éléphant de jade découvert dans la tombe de la dame Fuhao.\n\nHéritier de l’art des potiers pour l’élaboration de la forme, et de celui des ciseleurs de jade pour le décor ornemental, ce type de pièce a été réalisé dans un moule à section en terre réfractaire. Les jonctions des différentes parties ont laissé des arêtes vives courant le long des pattes et de l’abdomen de l’animal.\n\nLe terme général de zun désigne des coupes à alcool dont les formes varient de celle d’un calice à d’autres plus zoomorphes. Celles-ci sont utilisées lors de cérémonies de rites officiels, au cours desquelles le monarque rend hommage au ciel pour les besoins de fonctionnement harmonieux de l’univers. Les Shang saisiront toute la portée magique que l’on peut tirer d’une vaisselle sacrificielle fondue dans une matière rare. Ainsi, ces récipients deviendront très vite les garants de la légitimité royale. Pour cette raison, les formes seront variées de façon inépuisable, en fait cinquante modèles qui marquent le faste que l’on peut trouver lors de ces rituels." ; 
+            crm:P2_has_type aat:300435416 ;
+            crm:P72_has_language aat:300388306 ];
+    crm:P52_has_current_owner ba:11 ;
+    crm:P67i_is_referred_to_by  bso:07 ;
+    crm:P2_has_type bvt:18 ; 
+    crm:P65_shows_visual_item
+        [ a crm:E36_Visual_Item ;
+            la:digitally_shown_by
+            [ a dig:D1_Digital_Object ;
+                rdfs:label "青铜器物件120图像" ;
+                dcterms:format mime:jpeg ;
+                la:access_point <http://daiding7/image115.jpg>
+            ]
+        ];
+    crm:P129i_is_subject_of bo:HomepageOfObject120 ;
+    crm:P108i_was_produced_by bo:ProductionOfObject1120 .
+
+<http://daiding7/image115.jpg> a dig:D1_Digital_Object .
+
+bo:HomepageOfObject120
+    a dig:D1_Digital_Object ;
+    rdfs:label "Homepage for Object120" ;
+    dcterms:format mime:text/html ;
+    crm:P2_has_type aat:300264578 ;
+    la:access_point <https://www.guimet.fr/collections/chine/zun-camondo-recipient-a-alcool/> .
+
+<https://www.guimet.fr/collections/chine/zun-camondo-recipient-a-alcool/> a dig:D1_Digital_Object .
+
+bo:ProductionOfObject120
+    a crm:E12_Production ;
+    rdfs:label "象尊的生产" ;
+    crm:P4_has_time-span
+    [ a crm:E52_Time-Span ;
+        bs:period bvp:03 
+    ].
+
+aat:300388113
+    a crm:E56_Language ;
+    rdfs:label "Chinese" .      
+aat:300388277 
+    a crm:E56_Language ;
+    rdfs:label "English" .
+aat:300388306 
+    a crm:E56_Language ;
+    rdfs:label "French" .
+aat:300404670
+    a crm:E55_Type ;
+    rdfs:label "Primary Name" .
+aat:300312355    
+    a crm:E55_Type ;
+    rdfs:label "Accession Number" .
+aat:300055644
+    a crm:E55_Type ;
+    rdfs:label "Height" .
+aat:300055647
+    a crm:E55_Type ;
+    rdfs:label "Width" .
+aat:300072633
+    a crm:E55_Type ;
+    rdfs:label "Depth" .
+aat:300379098 
+    a crm:E58_Measurement_Unit ;
+    rdfs:label "centimeters" .
+aat:300435416
+    a crm:E55_Type ;
+    rdfs:label "Description" .
+aat:300435443
+    a crm:E55_Type ;
+    rdfs:label "Type of Work" .
+aat:300028702
+    a crm:E55_Type ;
+    rdfs:label "inscriptions" .
+aat:300264578
+    a crm:E55_Type ;
+    rdfs:label "Web Page" .
+aat:300215302
+    a crm:E55_Type ;
+    rdfs:label "Digital Image" .
+aat:300056240
+    a crm:E55_Type ;
+    rdfs:label "weight" .
+aat:300379226
+    a crm:E55_Type ;
+    rdfs:label "kilograms" .
+aat:300055624 
+    a crm:E55_Type ;
+    rdfs:label "diameter" .

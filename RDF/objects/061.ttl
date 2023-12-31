@@ -1,0 +1,102 @@
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix bso: <http://www.chod.net/bronze/source/>.
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bvp: <http://www.chod.net/bronze/vocabulary/period>. 
+@prefix bvt: <http://www.chod.net/bronze/vocabulary/type/>.
+@prefix bvd: <http://bronzeoversea.com/vocabulary/decorations/>.
+@prefix bvs: <http://www.chod.net/bronze/vocabulary/subject/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix ulan: <http://vocab.getty.edu/page/ulan/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dig: <http://www.ics.forth.gr/isl/CRMdig/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix mime: <http://www.iana.org/assignments/media-types/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix la: <https://linked.art/ns/terms/>.
+
+# Object 61
+bo:061
+    a crm:E22_Human-Made_Object ;
+    crm:P1_is_identified_by
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "缶" ;
+            crm:P72_has_language aat:300388113;
+            crm:P2_has_type aat:300404670 ] ,
+        [ a crm:E33_E41_Linguistic_Appellation ; 
+            crm:P190_has_symbolic_content "Covered vessel (hu)" ;
+            crm:P72_has_language aat:300388277 ] ,
+        [ a crm:E42_Identifier ;
+            crm:P190_has_symbolic_content "11.1447" ;
+            crm:P2_has_type aat:300312355 ] ;
+    crm:P43_has_dimension
+        [ a crm:E54_Dimension ;
+            crm:P2_has_type aat:300055644 ;
+            crm:P90_has_value 11.1447 ;
+            crm:P91_has_unit aat:300379098;
+            rdfs:label "Height" ] ;
+    crm:P2_has_type bvt:29 ;
+    crm:P67i_is_referred_to_by bso:01 ;  
+    crm:P52_has_current_owner ba:03 ;  
+    crm:P129i_is_subject_of bo:HomepageOfObject061 ;  
+    crm:P65_shows_visual_item
+        [ a crm:E36_Visual_Item ;
+            la:digitally_shown_by
+            [ a dig:D1_Digital_Object ;
+                rdfs:label "青铜器物件图像" ;
+                dcterms:format mime:jpeg ;
+                crm:P2_has_type aat:300215302 ;
+                la:access_point <http://daiding15/image.jpg> ]
+        ] ;
+    crm:P108i_was_produced_by bo:ProductionOfObject061 .
+
+<http://daiding15/image.jpg> a dig:D1_Digital_Object . 
+
+bo:HomepageOfObject061
+    a dig:D1_Digital_Object ;
+    rdfs:label "Homepage for Object061" ;
+    dcterms:format mime:text/html ;
+    crm:P2_has_type aat:300264578 ;
+    la:access_point <https://collections.mfa.org/objects/24488/covered-vessel-hu?ctx=4cb89695-bb1d-4734-98e1-61985fd7a965&idx=0> .
+
+<https://collections.mfa.org/objects/24488/covered-vessel-hu?ctx=4cb89695-bb1d-4734-98e1-61985fd7a965&idx=0> a dig:D1_Digital_Object .
+
+bo:ProductionOfObject061
+    a crm:E12_Production ;
+    rdfs:label "缶的生产" ;  
+    crm:P4_has_time-span
+        [ a crm:E52_Time-Span ;
+            bs:period bvp:07 ; 
+            rdfs:label "7th–6th century B.C." ] .
+
+
+aat:300388113 a crm:E56_Language ;
+    rdfs:label "Chinese" .
+aat:300388277 a crm:E56_Language ;
+    rdfs:label "English" .
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "Primary Name" .
+aat:300417203 a crm:E55_Type ;
+    rdfs:label "Former Title" .
+aat:300312355 a crm:E55_Type ;
+    rdfs:label "Accession Number" .
+aat:300055644 a crm:E55_Type ;
+    rdfs:label "Height" .
+aat:300055647 a crm:E55_Type ;
+    rdfs:label "Width" .
+aat:300072633 a crm:E55_Type ;
+    rdfs:label "Depth" .
+aat:300379098 a crm:E58_Measurement_Unit ;
+    rdfs:label "centimeters" .
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "Description" .
+aat:300435443 a crm:E55_Type ;
+    rdfs:label "Type of Work" .
+aat:300028702 a crm:E55_Type ;
+    rdfs:label "inscriptions" .
+aat:300264578 a crm:E55_Type ;
+    rdfs:label "Web Page" .
+aat:300215302 a crm:E55_Type ;
+    rdfs:label "Digital Image" .

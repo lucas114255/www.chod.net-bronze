@@ -1,0 +1,55 @@
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+
+# 编号27 毌得觚流传事件
+bp:27
+    a crm:E7_Activity ;
+    rdfs:label "毌得觚流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:094;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南安阳" ;
+            la:equivalent tgn:8212548
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1940"
+        ];
+        P22_transferred_title_to ba:05 ;
+        P23_transferred_title_from
+        [   a crm:E21_Person ;
+            rdfs:label "T. Mori" 
+        ];
+        crm:P14_carried_out_by 
+        [   a crm:E21_Person ;
+            rdfs:label "George Abo"
+        ];
+        crm:P24_transferred_title_of bo:094
+    ]
+.
+
+
+aat:300055863
+    a crm:E55_Type ;
+    rdfs:label "Provenance Activity" .
+
+aat:300053702;
+    a crm:E55_Type ;
+    rdfs:label "excavation" .
+
+aat:300160084
+    a crm:E55_Type ;
+    rdfs:label "companies" .

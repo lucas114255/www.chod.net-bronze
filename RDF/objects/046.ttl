@@ -1,0 +1,152 @@
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix bso: <http://www.chod.net/bronze/source/>.
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bvp: <http://www.chod.net/bronze/vocabulary/period>. 
+@prefix bvt: <http://www.chod.net/bronze/vocabulary/type/>.
+@prefix bvd: <http://bronzeoversea.com/vocabulary/decorations/>.
+@prefix bvs: <http://www.chod.net/bronze/vocabulary/subject/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix ulan: <http://vocab.getty.edu/page/ulan/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dig: <http://www.ics.forth.gr/isl/CRMdig/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix mime: <http://www.iana.org/assignments/media-types/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix la: <https://linked.art/ns/terms/>.
+
+bo:046 
+    a crm:E22_Human-Made_Object ;
+    crm:P1_is_identified_by
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "右养瓿" ;
+            crm:P72_has_language aat:300388113;
+            crm:P2_has_type aat:300404670 ] ,
+        [ a crm:E33_E41_Linguistic_Appellation ; 
+            crm:P190_has_symbolic_content "Vase pou" ;
+            crm:P72_has_language aat:300388306 ] ,
+        [ a crm:E42_Identifier ;
+            crm:P190_has_symbolic_content "M.C. 8760" ;
+            crm:P2_has_type aat:300312355 ] ;
+    crm:P43_has_dimension
+        [ a crm:E54_Dimension ;
+            crm:P2_has_type aat:300055644 ;
+            crm:P90_has_value 26.6 ;
+            crm:P91_has_unit aat:300379098;
+            rdfs:label "Height" ],
+        [ a crm:E54_Dimension ;
+            crm:P2_has_type aat:300055624 ;
+            crm:P90_has_value 23.9 ;
+            crm:P91_has_unit aat:300379098;
+            rdfs:label "Diameter" ] ;
+    crm:P67i_is_referred_to_by
+        [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Les lettrés de l’époque des Song du Nord (960-1227) ont appelé pou les vases antiques larges et trapus, au col resserré, supportés par un pied annulaire. Ces récipients étaient autrefois systématiquement pourvus d’un couvercle, aujourd’hui rarement conservé. Classés par certains auteurs parmi les bronzes destinés à contenir des aliments solides et par d’autres, des boissons fermentées, ils perpétuent la forme de certains vases en céramique de l’époque néolithique.Sur l’exemplaire du musée Cernuschi, trois masques d’ovin, en fort relief sur l’épaulement, et de légères arêtes, sur la panse et sur le pied, contrastent sur ces trois larges registres avec le décor en méplat de larges dragons de type kui, se détachant eux-mêmes sur un fond de spirales carrées. Ces dragons possèdent de légères variantes d’un bandeau à l’autre. Sur la panse et le pied, leur affrontement, de chaque côté des arêtes, forme des masques de taotie aux yeux globuleux fortement en saillie. L’ensemble participe au style n°IV défini par Max Lœr.Il existe de nombreux pou que l’on peut comparer à la pièce du musée Cernuschi. A la liste fournie par V. Elisseeff dont on retiendra plus particulièrement celui du Cleveland Museum of Art et du Boston Museum of Fine Arts, on ajoutera l’exemplaire du musée Rietberg de Zürich et celui de l’Arthur M. Sackler Foundation de Washington.Sur la pièce ici commentée, les deux caractères qui constituent l’inscription se retrouvent sur un fang lei du Nezu Bijutsukan de Tôkyô. R. Bagley suggère que les deux pièces ont été exécutées par le même commanditaire. Le lei du musée Nezu quant à lui est identique à une paire de fanglei découverts dans la tombe n°5 de Anyang que l’on a coutume de dater de la fin du règne de Wuding, peut-être deuxième roi de Anyang (XIIIe siècle av. J.-C. - ?). Cette argumentation cadre mal avec le style du pou du musée Cernuschi qui appartient à la dernière phase de production de Anyang (XIIe-Iere moitié XIe siècle av. J.-C.). De même, on a coutume d’attribuer, au sud de la Chine, les bronzes à patine vert clair, comme cendré." ;
+            crm:P2_has_type aat:300435416 ;
+            crm:P72_has_language aat:300388306 ] ;
+    crm:P2_has_type bvt:12 ;
+    crm:P65_shows_visual_item
+        [ a crm:E36_Visual_Item ;
+            crm:P2_has_type bvs:09  ; 
+            rdfs:label "造型主题：Sheep" ] ,
+        [ a crm:E36_Visual_Item ;
+            crm:P2_has_type bvs:13 ; 
+            rdfs:label "造型主题：Dragon" ] ,
+        [ a crm:E36_Visual_Item ;
+            crm:P2_has_type bvs:14  ; 
+            rdfs:label "造型主题：Taotie" ],
+        [ a crm:E36_Visual_Item ;
+            crm:P2_has_type bvd:geometric_lightening ; 
+            rdfs:label "纹饰：雷纹" ] ;
+    bs:inscribed_part bo:InscribedPartOfObject046 ;  
+    crm:P67i_is_referred_to_by bso:07 ;  
+    crm:P52_has_current_owner ba:02 ;  
+    crm:P129i_is_subject_of bo:HomepageOfObject046 ;  
+    crm:P65_shows_visual_item
+        [ a crm:E36_Visual_Item ;
+            la:digitally_shown_by
+            [ a dig:D1_Digital_Object ;
+                rdfs:label "青铜器物件图像" ;
+                dcterms:format mime:jpeg ;
+                crm:P2_has_type aat:300215302 ;
+                la:access_point <http://daiding7/image.jpg> ]
+        ] ;
+    crm:P108i_was_produced_by bo:ProductionOfObject046 .
+
+<http://daiding7/image.jpg> a dig:D1_Digital_Object .
+
+
+bo:InscribedPartOfObject046
+    a bs:Inscription ;
+    crm:P2_has_type aat:300028702 ;
+    crm:P128_carries
+        [ a crm:E34_Inscription ;
+            crm:P72_has_language aat:300388113 ;
+            bs:translation
+                [ a crm:E33_Linguistic_Object ;
+                    crm:P72_has_language aat:300388306 ;
+                    crm:P190_has_symbolic_content "Les lettrés de l’époque des Song du Nord (960-1227) ont appelé pou 瓿 les vases antiques larges et trapus..." ]
+        ] ;
+    crm:P65_shows_visual_item
+        [ a crm:E36_Visual_Item ;
+            la:digitally_shown_by
+            [ a dig:D1_Digital_Object ;
+                rdfs:label "铭文原文图像" ;
+                dcterms:format mime:jpeg ;
+                crm:P2_has_type aat:300215302 ;
+                la:access_point <http://daiding8/image.jpg> ]
+        ] .
+<http://daiding8/image.jpg> a dig:D1_Digital_Object .
+
+bo:HomepageOfObject046
+    a dig:D1_Digital_Object ;
+    rdfs:label "Homepage for Object046" ;
+    dcterms:format mime:text/html ;
+    crm:P2_has_type aat:300264578 ;
+    la:access_point <https://www.parismuseescollections.paris.fr/fr/musee-cernuschi/oeuvres/vase-pou-pou#infos-principales/>.
+<https://www.parismuseescollections.paris.fr/fr/musee-cernuschi/oeuvres/vase-pou-pou#infos-principales> a dig:D1_Digital_Object .
+
+bo:ProductionOfObject046
+    a crm:E12_Production ;
+    rdfs:label "右养瓿的生产" ;
+    crm:P4_has_time-span
+        [ a crm:E52_Time-Span ;
+            bs:period bvp:03 ;
+            rdfs:label "En -1200" ].
+
+aat:300388113 a crm:E56_Language ;
+    rdfs:label "Chinese" .
+aat:300388306 a crm:E56_Language ;
+    rdfs:label "French" .
+aat:300388277 a crm:E56_Language ;
+    rdfs:label "English" .
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "Primary Name" .
+aat:300417203 a crm:E55_Type ;
+    rdfs:label "Former Title" .
+aat:300312355 a crm:E55_Type ;
+    rdfs:label "Accession Number" .
+aat:300055644 a crm:E55_Type ;
+    rdfs:label "Height" .
+aat:300055647 a crm:E55_Type ;
+    rdfs:label "Width" .
+aat:300072633 a crm:E55_Type ;
+    rdfs:label "Depth" .
+aat:300379098 a crm:E58_Measurement_Unit ;
+    rdfs:label "centimeters" .
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "Description" .
+aat:300435443 a crm:E55_Type ;
+    rdfs:label "Type of Work" .
+aat:300028702 a crm:E55_Type ;
+    rdfs:label "inscriptions" .
+aat:300264578 a crm:E55_Type ;
+    rdfs:label "Web Page" .
+aat:300215302 a crm:E55_Type ;
+    rdfs:label "Digital Image" .
+aat:300055624 a crm:E55_Type ;
+    rdfs:label "diameter" .
+aat:300055645 a crm:E55_Type ;
+    rdfs:label "length" .

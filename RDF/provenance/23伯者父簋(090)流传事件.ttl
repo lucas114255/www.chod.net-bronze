@@ -1,0 +1,162 @@
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix sci: <http://www.ics.forth.gr/isl/CRMsci/> .
+
+#23伯者父簋(090)流传事件
+bp:23
+    a crm:E7_Activity ;
+    rdfs:label "伯者父簋的流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:090;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E74_Group;
+            rdfs:label  "Otto Burchard & Co." ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Berlin" ;
+            la:equivalent tgn:7003670
+        ] ;
+        crm:P24_transferred_title_of bo:090
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1935" 
+        ] 
+    ],
+    bp:23_PurchaseViaLot275,
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1937/11/1" 
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ],
+        [   a crm:E53_Place ;
+            rdfs:label " Paris" ;
+            la:equivalent tgn:7008038 
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E74_Group;
+            rdfs:label "C. T. Loo & Company";
+            crm:P2_has_type aat:300160084
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label  "September 29, 1938"
+            crm:P82a_begin_of_the_begin "1938-12-29T00:00:00Z" ;
+            crm:P82b_end_of_the_end "1938-12-29T00:00:00Z"  
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ],
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group;
+            rdfs:label "C. T. Loo & Company";
+            crm:P2_has_type aat:300160084
+        ] 
+    ].
+
+bp:23_PurchaseViaLot275
+    a crm:E7_Activity ;
+    rdfs:label "Purchase via Lot 275"
+    crm:P2_has_type aat:300055863;
+    crm:P16_used_specific_object bp:23_Set;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition ;
+        rdfs:label "Acquisition via Lot 275" ;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label "Hans Georg Oeder" 
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group;
+            rdfs:label  "Otto Burchard & Co." ;
+            crm:P2_has_type aat:300160084
+        ]; 
+        crm:P14_carried_out_by 
+        [   a crm:E21_Person;
+           rdfs:label "Arthur Abt ";
+        ];
+        crm:P24_transferred_title_of bo:090
+    ].
+
+bp:23_AuctionOfLot275
+    a crm:E7_Activity ;
+    rdfs:label "Auction of Lot 275" ;
+    crm:P2_has_type aat:300420001 ;
+    crm:P14_carried_out_by 
+    [   a crm:E21_Person ;
+        rdfs:label "Paul Graupe" 
+    ] ;
+    crm:P16_used_specific_object bp:23_Set;
+    crm:P9i_forms_part_of 
+    [   a crm:E7_Activity ;
+        rdfs:label " Liquidation: Chinesische Kunst: I. Teil" 
+        crm:P2_has_type aat:300054751 ;
+        crm:P4_has_time-span 
+        [   a crm:E52_Time-Span ;
+            rdfs:label "March 22, 1935" ;
+            crm:P82a_begin_of_the_begin "1935-03-22T00:00:00Z" ;
+            crm:P82b_end_of_the_end "1935-03-22T00:00:00Z" 
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Berlin" ;
+            la:equivalent tgn:7003670
+        ]
+    ] ;
+    sci:O13_triggers bp:23_PurchaseViaLot275.
+
+bp:23_Set
+    a la:Set ;
+    rdfs:label "Set of Objects for Lot 275" ;
+    crm:P2_has_type aat:300411307 ;
+    crm:P1_is_identified_by 
+    [   a crm:E42_Identifier ;
+        crm:P190_has_symbolic_content "275" ;
+        crm:P2_has_type aat:300404628 
+    ];
+    la:has_member bo:090.
+
+
+
+aat:300404628 
+    a crm:E55_Type ;
+    rdfs:label "Lot Number" .
+
+aat:300160084
+    a crm:E55_Type ;
+    rdfs:label "companies" .
+
+aat:300055863
+    a crm:E55_Type ;
+    rdfs:label "Provenance Activity" .
+
+aat:300411307
+    a crm:E55_Type ;
+    rdfs:label "Auction Lots" .
+
+aat:300420001
+    a crm:E55_Type ;
+    rdfs:label "Auction of Lot" .
+
+aat:300054751
+    a crm:E55_Type ;
+    rdfs:label "Auction Event" .

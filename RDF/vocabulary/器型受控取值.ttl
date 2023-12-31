@@ -1,0 +1,256 @@
+@prefix bvt: <http://www.chod.net/bronze/vocabulary/type/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix aat: <http://vocab.getty.edu/aat/>.
+
+
+bvt:01 
+    a skos:Concept;
+    rdfs:label "鼎"@zh; 
+    skos:altLabel "Ding (ritual vessels)";
+    skos:exactMatch aat:300265807.
+
+bvt:02
+    a skos:Concept;
+    rdfs:label "豆"@zh; 
+    skos:altLabel "Dou";
+    skos:exactMatch aat:300265814.
+
+bvt:03
+    a skos:Concept;
+    rdfs:label "觚"@zh; 
+    skos:altLabel "Gu (ritual vessel)";
+    skos:exactMatch aat:300265819.
+
+bvt:04
+    a skos:Concept;
+    rdfs:label "簋"@zh; 
+    skos:altLabel "Gui";
+    skos:exactMatch aat:300265823.
+
+bvt:05
+    a skos:Concept;
+    rdfs:label "盉"@zh; 
+    skos:altLabel "He";
+    skos:exactMatch aat:300265824.
+
+bvt:06
+    a skos:Concept;
+    rdfs:label "斝"@zh; 
+    skos:altLabel "Jia";
+    skos:exactMatch aat:300265825.
+
+bvt:07
+    a skos:Concept;
+    rdfs:label "鑑"@zh; 
+    skos:altLabel "Jian";
+    skos:exactMatch aat:300265827.
+
+bvt:08
+    a skos:Concept;
+    rdfs:label "角"@zh; 
+    skos:altLabel "Jiao";
+    skos:exactMatch aat:300265828.
+
+bvt:09
+    a skos:Concept;
+    rdfs:label "爵"@zh; 
+    skos:altLabel "Jue";
+    skos:exactMatch aat:300265830.
+
+bvt:10
+    a skos:Concept;
+    rdfs:label "罍"@zh; 
+    skos:altLabel "Lei";
+    skos:exactMatch aat:300265831.
+
+bvt:11
+    a skos:Concept;
+    rdfs:label "盘/盤"@zh; 
+    skos:altLabel "Pan (ritual vessel)";
+    skos:exactMatch aat:300265834.
+
+bvt:12
+    a skos:Concept;
+    rdfs:label "瓿"@zh; 
+    skos:altLabel "Pou";
+    skos:exactMatch aat:300265842.
+
+bvt:13
+    a skos:Concept;
+    rdfs:label "盨"@zh; 
+    skos:altLabel "Xu";
+    skos:exactMatch aat:300265844.
+
+bvt:14
+    a skos:Concept;
+    rdfs:label "卣"@zh; 
+    skos:altLabel "You";
+    skos:exactMatch aat:300265848.
+
+bvt:15
+    a skos:Concept;
+    rdfs:label "盂"@zh; 
+    skos:altLabel "Yu (basin-shaped vessel)";
+    skos:exactMatch aat:300265847.
+
+bvt:16
+    a skos:Concept;
+    rdfs:label "甗"@zh; 
+    skos:altLabel "Yan";
+    skos:exactMatch aat:300265845.
+
+bvt:17
+    a skos:Concept;
+    rdfs:label "匜"@zh; 
+    skos:altLabel "Yi";
+    skos:exactMatch aat:300265846.
+
+bvt:18
+    a skos:Concept;
+    rdfs:label "尊"@zh; 
+    skos:altLabel "Zun";
+    skos:exactMatch aat:300265850.
+
+bvt:19
+    a skos:Concept;
+    rdfs:label "鬲"@zh; 
+    skos:altLabel "Li";
+    skos:exactMatch aat:901001.
+
+bvt:20
+    a skos:Concept;
+    rdfs:label "簠"@zh; 
+    skos:altLabel "Fu";
+    skos:exactMatch aat:901002.
+
+bvt:21
+    a skos:Concept;
+    rdfs:label "匕(礼器)"@zh; 
+    skos:altLabel "Bi (ritual vessels)";
+    skos:exactMatch aat:901004.
+
+bvt:22
+    a skos:Concept;
+    rdfs:label "敦"@zh; 
+    skos:altLabel "Dui";
+    skos:exactMatch aat:901003.
+
+bvt:23
+    a skos:Concept;
+    rdfs:label "觥"@zh; 
+    skos:altLabel "Gong";
+    skos:exactMatch aat:901007.
+
+bvt:24
+    a skos:Concept;
+    rdfs:label "觯"@zh; 
+    skos:altLabel "Zhi";
+    skos:exactMatch aat:901005.
+
+bvt:25
+    a skos:Concept;
+    rdfs:label "方彝"@zh; 
+    skos:altLabel "Fangyi";
+    skos:exactMatch aat:901006.
+
+bvt:26
+    a skos:Concept;
+    rdfs:label "壶（礼器）"@zh; 
+    skos:altLabel "Hu (ritual vessels)";
+    skos:exactMatch aat:901008.
+
+bvt:27
+    a skos:Concept;
+    rdfs:label "扁壶"@zh; 
+    skos:altLabel "Bianhu-flask".
+
+
+bvt:28
+    a skos:Concept;
+    rdfs:label "勺（礼器）"@zh; 
+    skos:altLabel "Shao (ritual vessels)";
+    skos:exactMatch aat:901010.
+
+bvt:29
+    a skos:Concept;
+    rdfs:label "缶"@zh; 
+    skos:altLabel "Fou";
+    skos:exactMatch aat:901009.
+
+bvt:30
+    a skos:Concept;
+    rdfs:label "钟（礼器）"@zh; 
+    skos:altLabel "Zhong (ritual vessels)";
+    skos:exactMatch aat:901017.
+
+bvt:31
+    a skos:Concept;
+    rdfs:label "镜"@zh; 
+    skos:altLabel "Mirrors";
+    skos:exactMatch aat:300037682.
+
+bvt:32
+    a skos:Concept;
+    rdfs:label "戈"@zh; 
+    skos:altLabel "Ge-dagger-ax".
+
+
+bvt:33
+    a skos:Concept;
+    rdfs:label "矛"@zh; 
+    skos:altLabel "Mao-spearhead";
+    skos:exactMatch aat:300037038.
+
+bvt:34
+    a skos:Concept;
+    rdfs:label "斧（工具）"@zh; 
+    skos:altLabel "Axes (tools)";
+    skos:exactMatch aat:300024664.
+
+bvt:35
+    a skos:Concept;
+    rdfs:label "斧（武器）"@zh; 
+    skos:altLabel "Axes (weapons)";
+    skos:exactMatch aat:300036982.
+
+bvt:36
+    a skos:Concept;
+    rdfs:label "戟"@zh; 
+    skos:altLabel "Halberds";
+    skos:exactMatch aat:300037010.
+
+bvt:37
+    a skos:Concept;
+    rdfs:label "钺"@zh; 
+    skos:altLabel "Yue-broadaxe".
+
+
+bvt:38
+    a skos:Concept;
+    rdfs:label "剑"@zh; 
+    skos:altLabel "Swords";
+    skos:exactMatch aat:300037048.
+
+bvt:39
+    a skos:Concept;
+    rdfs:label "带钩"@zh; 
+    skos:altLabel "Daigou-belthooks".
+
+
+bvt:40
+    a skos:Concept;
+    rdfs:label "装饰物"@zh; 
+    skos:altLabel "Ornaments";
+    skos:exactMatch aat:300266794.
+
+bvt:41
+    a skos:Concept;
+    rdfs:label "尖顶饰"@zh; 
+    skos:altLabel "Finials";
+    skos:exactMatch aat:300002280.
+
+bvt:42
+    a skos:Concept;
+    rdfs:label "禁"@zh; 
+    skos:altLabel "Jin".

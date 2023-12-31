@@ -1,0 +1,37 @@
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+
+# 编号04 戈鼎流传事件
+bp:04
+    a crm:E7_Activity ;
+    rdfs:label "戈鼎流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:041;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+            [   a crm:E52_Time-Span ;
+                rdfs:label "丙戌三月" ；
+                crm:P82a_begin_of_the_begin "1886-03-01T00:00:00Z" ;
+                crm:P82b_end_of_the_end "1886-03-31T00:00:00Z"  ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "江苏省扬州市邗江区邗上街道邗上村" ;
+            la:equivalent tgn:8203245] 
+    ].
+
+aat:300055863
+    a crm:E55_Type ;
+    rdfs:label "Provenance Activity" .
+
+aat:300053702
+    a crm:E55_Type ;
+    rdfs:label "excavation" .

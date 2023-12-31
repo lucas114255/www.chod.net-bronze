@@ -1,0 +1,133 @@
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix bso: <http://www.chod.net/bronze/source/>.
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bvp: <http://www.chod.net/bronze/vocabulary/period>. 
+@prefix bvt: <http://www.chod.net/bronze/vocabulary/type/>.
+@prefix bvd: <http://bronzeoversea.com/vocabulary/decorations/>.
+@prefix bvs: <http://www.chod.net/bronze/vocabulary/subject/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix ulan: <http://vocab.getty.edu/page/ulan/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dig: <http://www.ics.forth.gr/isl/CRMdig/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix mime: <http://www.iana.org/assignments/media-types/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix la: <https://linked.art/ns/terms/>.
+
+# 青铜器物件115
+bo:115
+    a crm:E22_Human-Made_Object ;
+    crm:P1_is_identified_by
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "罍" ;
+            crm:P72_has_language aat:300388113 ;
+            crm:P2_has_type aat:300404670 ] ,
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Wine Container" ;
+            crm:P72_has_language aat:300388277 ] ,
+        [ a crm:E42_Identifier ;
+            crm:P190_has_symbolic_content "1938.17" ;
+            crm:P2_has_type aat:300312355 ] ;
+    crm:P43_has_dimension
+        [ a crm:E54_Dimension ;
+            crm:P2_has_type aat:300055624 ;
+            crm:P90_has_value 45 ;
+            crm:P91_has_unit aat:300379098 ;
+            rdfs:label "H." ] ,
+        [ a crm:E54_Dimension ;
+            crm:P2_has_type aat:300055647 ;
+            crm:P90_has_value 24.8 ;
+            crm:P91_has_unit aat:300379098 ;
+            rdfs:label "W." ] ;
+    crm:P67i_is_referred_to_by
+        [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "The bronze vessels produced with sophisticated casting techniques and intricate designs by Chinese artisans of the late Shang dynasty (c. 1700-c. 1050 B.C.) are achievements unrivaled by any other Bronze Age culture. For the ruling elite of ancient China, prestigious objects made of bronze signified supreme political power as well as devout spiritual beliefs and exalted social status. Foremost among these bronzes are vessels that were made for the preparation and offering of food, wine, and water in ceremonial banquets conducted to seek and repay divine ancestral goodwill. Ancient Chinese wine was fermented from grain rather than fruit and, like beer, is best described as a type of millet ale. This square-shouldered jar for wine storage is animated by a menagerie of" ;
+            crm:P2_has_type aat:300435416 ;
+            crm:P72_has_language aat:300388277 ];
+    crm:P52_has_current_owner ba:08 ;
+    crm:P2_has_type bvt:10; 
+    crm:P67i_is_referred_to_by  bso:01 ;
+    crm:P129i_is_subject_of bo:HomepageOfObject115 ;
+    crm:P65_shows_visual_item
+        [ a crm:E36_Visual_Item ;
+            la:digitally_shown_by
+            [ a dig:D1_Digital_Object ;
+                rdfs:label "青铜器物件115图像" ;
+                dcterms:format mime:jpeg ;
+                la:access_point <http://daiding7/image115.jpg>
+            ]
+        ];
+    crm:P108i_was_produced_by bo:ProductionOfObject115 ;
+    bs:influenced_by bp:38.
+
+<http://daiding7/image115.jpg> a dig:D1_Digital_Object .
+
+bo:HomepageOfObject115
+    a dig:D1_Digital_Object ;
+    rdfs:label "Homepage for Object115" ;
+    dcterms:format mime:text/html ;
+    crm:P2_has_type aat:300264578 ;
+    la:access_point <https://www.artic.edu/artworks/26647/wine-container>.
+
+<https://www.artic.edu/artworks/26647/wine-container> a dig:D1_Digital_Object .
+
+bo:ProductionOfObject115
+    a crm:E12_Production ;
+    rdfs:label "罍的生产" ;
+    crm:P4_has_time-span
+    [ a crm:E52_Time-Span ;
+        bs:period bvp:03 ;  
+        rdfs:label "Made 1600 BCE–1050 BCE"
+    ].
+
+aat:300388113
+    a crm:E56_Language ;
+    rdfs:label "Chinese" .      
+aat:300388277 
+    a crm:E56_Language ;
+    rdfs:label "English" .
+aat:300404670
+    a crm:E55_Type ;
+    rdfs:label "Primary Name" .
+aat:300312355    
+    a crm:E55_Type ;
+    rdfs:label "Accession Number" .
+aat:300055644
+    a crm:E55_Type ;
+    rdfs:label "Height" .
+aat:300055647
+    a crm:E55_Type ;
+    rdfs:label "Width" .
+aat:300072633
+    a crm:E55_Type ;
+    rdfs:label "Depth" .
+aat:300379098 
+    a crm:E58_Measurement_Unit ;
+    rdfs:label "centimeters" .
+aat:300435416
+    a crm:E55_Type ;
+    rdfs:label "Description" .
+aat:300435443
+    a crm:E55_Type ;
+    rdfs:label "Type of Work" .
+aat:300028702
+    a crm:E55_Type ;
+    rdfs:label "inscriptions" .
+aat:300264578
+    a crm:E55_Type ;
+    rdfs:label "Web Page" .
+aat:300215302
+    a crm:E55_Type ;
+    rdfs:label "Digital Image" .
+aat:300056240
+    a crm:E55_Type ;
+    rdfs:label "weight" .
+aat:300379226
+    a crm:E55_Type ;
+    rdfs:label "kilograms" .
+aat:300055624 
+    a crm:E55_Type ;
+    rdfs:label "diameter" .

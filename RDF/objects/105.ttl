@@ -1,0 +1,148 @@
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>. 
+@prefix bso: <http://www.chod.net/bronze/source/>.
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bvp: <http://www.chod.net/bronze/vocabulary/period>. 
+@prefix bvt: <http://www.chod.net/bronze/vocabulary/type/>.
+@prefix bvd: <http://bronzeoversea.com/vocabulary/decorations/>.
+@prefix bvs: <http://www.chod.net/bronze/vocabulary/subject/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dig: <http://www.ics.forth.gr/isl/CRMdig/> .
+@prefix dcterms: <http://purl.org/dc/terms/> . 
+@prefix mime: <http://www.iana.org/assignments/media-types/>.
+
+# 青铜器物件105
+bo:105
+    a crm:E22_Human-Made_Object ;
+    crm:P1_is_identified_by
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "命簋" ;
+            crm:P72_has_language aat:300388113 ;
+            crm:P2_has_type aat:300404670 ] ,
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Covered Food Container" ;
+            crm:P72_has_language aat:300388277 ] ,
+        [ a crm:E42_Identifier ;
+            crm:P190_has_symbolic_content "1927.1432" ;
+            crm:P2_has_type aat:300312355 ] ;
+    crm:P43_has_dimension
+        [ a crm:E54_Dimension ;
+            crm:P2_has_type aat:300055644 ;
+            crm:P90_has_value 24.1 ;
+            crm:P91_has_unit aat:300379098 ;
+            rdfs:label "H." ] ,
+        [ a crm:E54_Dimension ;
+            crm:P2_has_type aat:300055624 ;
+            crm:P90_has_value 21.6 ;
+            crm:P91_has_unit aat:300379098 ;
+            rdfs:label "Diam." ] ;
+    crm:P67i_is_referred_to_by
+        [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Birds with long, trailing plumage encircle the lid and basin of this vessel. Their flowing lines reflect the skillful hand of the potter who carved the design in clay for casting in bronze. At some time in the past, this extensively damaged vessel was repaired and cleaned, thereby exposing its present, uncorroded surface. Cast in the basin and lid are identical inscriptions:“In the eleventh month, first quarter, [on the day] jiashen, the King was in Hua. The King gave Ming deer. [Ming] therefore made [this] precious vessel. May Ming always [use this] gui to entertain many friends.” The unusual inscription describes a secular event, indicating a new use for ritual bronzes. Such commemorative inscriptions, which gradually replaced shorter ancestor dedications, are important documents of Western Zhou history." ;
+            crm:P2_has_type aat:300435416 ;
+            crm:P72_has_language aat:300388277 ] ;
+    crm:P52_has_current_owner ba:08 ;
+    crm:P67i_is_referred_to_by  bso:01 ;
+    crm:P2_has_type bvt:04;
+    crm:P129i_is_subject_of bo:HomepageOfObject105 ;
+    crm:P65_shows_visual_item
+        [ a crm:E36_Visual_Item ;
+            la:digitally_shown_by
+            [ a dig:D1_Digital_Object ;
+                rdfs:label "青铜器物件105图像" ;
+                dcterms:format mime:jpeg ;
+                la:access_point <http://daiding7/image105.jpg>
+            ]
+        ];
+    crm:P108i_was_produced_by bo:ProductionOfObject105 ;
+    bs:inscribed_part  bo:InscribedPartOfObject105 .
+
+<http://daiding7/image105.jpg> a dig:D1_Digital_Object .
+
+bo:HomepageOfObject105
+    a dig:D1_Digital_Object ;
+    rdfs:label "Homepage for Object105" ;
+    dcterms:format mime:text/html ;
+    crm:P2_has_type aat:300264578 ;
+    la:access_point <https://www.artic.edu/artworks/32538/grain-vessel-gui>.
+
+<https://www.artic.edu/artworks/32538/grain-vessel-gui> a dig:D1_Digital_Object .
+
+bo:ProductionOfObject105
+    a crm:E12_Production ;
+    rdfs:label "命簋的生产" ;
+    crm:P4_has_time-span
+    [ a crm:E52_Time-Span ;
+        bs:period bvp:04 ;
+        rdfs:label "1050 BCE–1000 BCE"
+    ].
+
+bo:InscribedPartOfObject105
+    a bs:Inscription;
+    rdfs:label "盖内 + 器内底" ;
+    crm:P2_has_type  aat:300028702 ;
+    crm:P65_shows_visual_item
+        [   a crm:E36_Visual_Item ;
+            la:digitally_shown_by
+            [   a dig:D1_Digital_Object ;
+                rdfs:label "铭文原文图像" ;
+                dcterms:format mime:jpeg;
+                crm:P2_has_type aat:300215302;
+                la:access_point <http://daiding2/image.jpg>
+            ]
+        ].
+<http://daiding2/image.jpg> a dig:D1_Digital_Object .
+
+aat:300388113
+    a crm:E56_Language ;
+    rdfs:label "Chinese" .      
+aat:300388277 
+    a crm:E56_Language ;
+    rdfs:label "English" .
+aat:300404670
+    a crm:E55_Type ;
+    rdfs:label "Primary Name" .
+aat:300312355    
+    a crm:E55_Type ;
+    rdfs:label "Accession Number" .
+aat:300055644
+    a crm:E55_Type ;
+    rdfs:label "Height" .
+aat:300055647
+    a crm:E55_Type ;
+    rdfs:label "Width" .
+aat:300072633
+    a crm:E55_Type ;
+    rdfs:label "Depth" .
+aat:300379098 
+    a crm:E58_Measurement_Unit ;
+    rdfs:label "centimeters" .
+aat:300435416
+    a crm:E55_Type ;
+    rdfs:label "Description" .
+aat:300435443
+    a crm:E55_Type ;
+    rdfs:label "Type of Work" .
+aat:300028702
+    a crm:E55_Type ;
+    rdfs:label "inscriptions" .
+aat:300264578
+    a crm:E55_Type ;
+    rdfs:label "Web Page" .
+aat:300215302
+    a crm:E55_Type ;
+    rdfs:label "Digital Image" .
+aat:300056240
+    a crm:E55_Type ;
+    rdfs:label "weight" .
+aat:300379226
+    a crm:E55_Type ;
+    rdfs:label "kilograms" .
+aat:300055624 
+    a crm:E55_Type ;
+    rdfs:label "diameter" .

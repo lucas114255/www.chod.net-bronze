@@ -1,0 +1,190 @@
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+
+bp:20
+    a crm:E7_Activity ;
+    rdfs:label "大保簋的流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:087;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P1_is_identified_by
+        [   a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "梁山七器出土" ;
+            crm:P72_has_language aat:300388113;
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label  "清朝（咸丰年间）" ;
+            la:equivalent aat:300018478] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "山东（寿张县梁山）" ;
+            la:equivalent tgn:8630381] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label  "钟养田（Zhong Yangtian）" 
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "山东济宁" ;
+            la:equivalent tgn:8623344] ;
+        crm:P24_transferred_title_of bo:087
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label "李宗岱（Li Zongdai）"  
+        ]  ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label  "钟养田（Zhong Yangtian）" 
+        ];
+        crm:P24_transferred_title_of bo:087
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label "溥伦（Pulun）" 
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "李宗岱（Li Zongdai）"  
+        ]  ;
+        crm:P24_transferred_title_of bo:087
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label "黄君（Huang Jun）"
+        ] ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "溥伦（Pulun）" 
+        ];
+        crm:P24_transferred_title_of bo:087
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label "丁氏（Ding）"
+        ] ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "黄君（Huang Jun）"
+        ] ;
+        crm:P24_transferred_title_of bo:087;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "山东潍坊" ;
+            la:equivalent tgn:8676690] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            "Marcel Bing" 
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "丁氏（Ding）"
+        ] ;
+        crm:P24_transferred_title_of bo:087;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label " Paris" ;
+            la:equivalent tgn:7008038] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1915" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567] ;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label "Eugene Meyer and Agnes E. Meyer"
+        ]  ;
+        crm:P23_transferred_title_from
+        [   a crm:E21_Person;
+            rdfs:label "Marcel Bing" 
+        ];
+        crm:P24_transferred_title_of bo:087 ;
+        crm:P14_carried_out_by 
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo, Lai Yuan & Co";
+            crm:P2_has_type aat:300160084
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1959-07-17"
+            crm:P82a_begin_of_the_begin "1959-07-17T00:00:00Z" ;
+            crm:P82b_end_of_the_end "1959-07-17T00:00:00Z"  ] ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label "Agnes E. Meyer" 
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "Eugene Meyer"
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label   "1961" ] ;
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "Eugene Meyer and Agnes E. Meyer"
+        ]  
+    ].
+
+aat:300160084
+    a crm:E55_Type ;
+    rdfs:label "companies" .
+
+aat:300055863
+    a crm:E55_Type ;
+    rdfs:label "Provenance Activity" .
+
+aat:300053702;
+    a crm:E55_Type ;
+    rdfs:label "excavation" .
+
+aat:300018478
+    a crm:E55_Type ;
+    rdfs:label "Qing" .
+
+tgn:7002085   
+    a crm:E55_Type ;
+    rdfs:label "Shandong (province)" .
+
+tgn:8623344
+    a crm:E55_Type ;
+    rdfs:label "Jining (second level subdivision)" .
+
+tgn:7008038
+    a crm:E55_Type ;
+    rdfs:label "Paris" .
+
+tgn:7013962
+    a crm:E55_Type ;
+    rdfs:label "Washington" .
+
+tgn:7007567
+    a crm:E55_Type ;
+    rdfs:label "New York" .

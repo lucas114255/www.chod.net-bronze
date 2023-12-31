@@ -1,0 +1,166 @@
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+
+bp:32
+    a crm:E7_Activity ;
+    rdfs:label "羊父庚鼎流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:099;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label  "Qianlong Emperor (乾隆)" 
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Forbidden City, China" ;
+            la:equivalent tgn:8061551] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label  "Prince Pulun (溥伦),Senior Grandson of Daoguang Emperor" 
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Forbidden City, China" ;
+            la:equivalent tgn:8061551] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E74_Group
+            rdfs:label "C. T. Loo & Company";
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1924" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Paris, New York" ;
+            la:equivalent tgn:7008038, tgn:7007567] 
+    ],
+    [   a crm:E10_Transfer_of_Custody ;
+        crm:P29_transferred_custody_to 
+        [   a crm:E74_Group
+            rdfs:label "C. T. Loo, INC.";
+            crm:P2_has_type aat:300160084 
+        ] ;
+        crm:P28_transferred_custody_from 
+        [   a crm:E74_Group
+            rdfs:label "C. T. Loo & Company";
+            crm:P2_has_type aat:300160084
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1948" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567] 
+    ],
+    [   a crm:E10_Transfer_of_Custody ;
+        crm:P29_transferred_custody_to 
+        [   a crm:E74_Group
+            rdfs:label "C. T. Loo Chinese Art, INC.";
+            crm:P2_has_type aat:300160084  
+        ] ;
+        crm:P28_transferred_custody_from 
+        [   a crm:E74_Group
+            rdfs:label "C. T. Loo, INC." ;
+            crm:P2_has_type aat:300160084
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1953" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E74_Group
+            rdfs:label "Frank Caro Chinese Art" ;
+            crm:P2_has_type aat:300160084 
+        ]  ;
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group
+            rdfs:label "C. T. Loo Chinese Art, INC." ;
+            crm:P2_has_type aat:300160084 
+        ]  ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1961" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label "Arthur M. Sackler"
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group
+            rdfs:label "Frank Caro Chinese Art" ;
+            crm:P2_has_type aat:300160084 
+        ]  ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1987-09-11" ] 
+    ],   
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to ba:06 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "Arthur M. Sackler"
+        ];
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1987-09-11" ] 
+    ].
+
+aat:300160084
+    a crm:E55_Type ;
+    rdfs:label "companies" .
+
+aat:300411994
+    a crm:E55_Type ;
+    rdfs:label "United States dollar" .
+
+aat:300055863
+    a crm:E55_Type ;
+    rdfs:label "Provenance Activity" .
+
+aat:300018478
+    a crm:E55_Type ;
+    rdfs:label "Qing" .
+
+tgn:7002085   
+    a crm:E55_Type ;
+    rdfs:label "Shandong (province)" .
+
+tgn:8623344
+    a crm:E55_Type ;
+    rdfs:label "Jining (second level subdivision)" .
+
+tgn:7008038
+    a crm:E55_Type ;
+    rdfs:label "Paris" .
+
+tgn:7013962
+    a crm:E55_Type ;
+    rdfs:label "Washington" .
+
+tgn:7007567
+    a crm:E55_Type ;
+    rdfs:label "New York" .

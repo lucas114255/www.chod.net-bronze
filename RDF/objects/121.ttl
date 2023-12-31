@@ -1,0 +1,150 @@
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix bso: <http://www.chod.net/bronze/source/>.
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bvp: <http://www.chod.net/bronze/vocabulary/period>. 
+@prefix bvt: <http://www.chod.net/bronze/vocabulary/type/>.
+@prefix bvd: <http://bronzeoversea.com/vocabulary/decorations/>.
+@prefix bvs: <http://www.chod.net/bronze/vocabulary/subject/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix ulan: <http://vocab.getty.edu/page/ulan/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dig: <http://www.ics.forth.gr/isl/CRMdig/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix mime: <http://www.iana.org/assignments/media-types/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix la: <https://linked.art/ns/terms/>.
+
+# 青铜器物件121
+bo:121
+    a crm:E22_Human-Made_Object ;
+    crm:P1_is_identified_by
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "周生豆" ; 
+            crm:P72_has_language aat:300388113 ;
+            crm:P2_has_type aat:300404670 ] ,
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Ritual wine vessel (dou)" ;
+            crm:P72_has_language aat:300388277 ] ,
+        [ a crm:E42_Identifier ;
+            crm:P190_has_symbolic_content "B60B949" ;  
+            crm:P2_has_type aat:300312355 ] ;
+    crm:P43_has_dimension
+        [ a crm:E54_Dimension ;
+            crm:P2_has_type aat:300055648;
+            crm:P90_has_value 19.05 ;  
+            crm:P91_has_unit aat:300379098 ;
+            rdfs:label "H." ] ,
+        [ a crm:E54_Dimension ;
+            crm:P2_has_type aat:300055647 ;
+            crm:P90_has_value 17.145 ;  
+            crm:P91_has_unit aat:300379098 ;
+            rdfs:label "W." ] ;
+    crm:P67i_is_referred_to_by
+        [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "These vessels [B60 B1005, B60 B1054, B60 B949 and B62 B146] do not share the conservatism of the lei of the preceding plate (B60B450) and as such are more explicit examples of the Mid Western Zhou styles. They introduce a set of new silhouettes, all characterized by a certain squatness and sagging of the contours, as well as a set of unprecedented ornamental schemes. Two of these motifs are particularly conspicuous and are typical of the period, namely the overlapping rows of flattened scales (smaller hu, douand you) and the wave band with stylized animal shapes (tall hu and you). The latter motif illustrates a more advanced stage in the calligraphic trend mentioned in connection with the preceding plate.\n\nIn bronze the dou (B60B949) does not seem to have been in use prior to the 9th century BCE, even though this shape is found in pottery as early as the Neolithic period. The bowl of this rare vessel is very shallow. The vertical outer wall or the bowl is deeply recessed underneath, and this recession is perforated with four large rectangular openings which do not seem to have any functional value. On the outside of the bowl and below two incised parallel lines, eight big and dome-like whorl-circles alternate with eight geometrical patterns in low relief. These patterns consist of four barbed, C-shaped spirals. Three tiers of scale motifs decorate the upper and lower parts of the concave stem while its waist is girt by a plain band with a central ridge." ; 
+            crm:P2_has_type aat:300435416 ;
+            crm:P72_has_language aat:300388277 ];
+    crm:P52_has_current_owner ba:12 ;
+    crm:P67i_is_referred_to_by  bso:02 ;
+    crm:P2_has_type bvt:02 ; 
+    crm:P129i_is_subject_of bo:HomepageOfObject121;
+    bs:inscribed_part bo:InscribedPartOfObject121 ;  
+    crm:P65_shows_visual_item
+        [ a crm:E36_Visual_Item ;
+            la:digitally_shown_by
+            [ a dig:D1_Digital_Object ;
+                rdfs:label "青铜器物件120图像" ;
+                dcterms:format mime:jpeg ;
+                la:access_point <http://daiding7/image121.jpg>
+            ]
+        ];
+    crm:P108i_was_produced_by bo:ProductionOfObject121.
+
+<http://daiding7/image121.jpg> a dig:D1_Digital_Object .
+
+bo:HomepageOfObject121
+    a dig:D1_Digital_Object ;
+    rdfs:label "Homepage for Object121" ;
+    dcterms:format mime:text/html ;
+    crm:P2_has_type aat:300264578 ;
+    la:access_point <https://searchcollection.asianart.org/objects/4396/ritual-wine-vessel-dou> .
+
+<https://searchcollection.asianart.org/objects/4396/ritual-wine-vessel-dou>  a dig:D1_Digital_Object .
+
+bo:ProductionOfObject115
+    a crm:E12_Production ;
+    rdfs:label "周生豆的生产" ;
+    crm:P4_has_time-span
+    [ a crm:E52_Time-Span ;
+        bs:period bvp:06 ;  
+        rdfs:label "approx. 950-850 BCE"
+    ].
+
+bo:InscribedPartOfObject121
+    a bs:Inscription ;
+    bs:inscribed_location "器内底 " ;
+    crm:P2_has_type aat:300028702 ;
+    crm:P65_shows_visual_item
+        [ a crm:E36_Visual_Item ;
+            la:digitally_shown_by
+            [ a dig:D1_Digital_Object ;
+                rdfs:label "铭文原文图像" ;
+                dcterms:format mime:jpeg ;
+                crm:P2_has_type aat:300215302 ;
+                la:access_point <http://daiding4/image.jpg> ]
+        ] .
+
+<http://daiding4/image.jpg> a dig:D1_Digital_Object .
+
+
+aat:300388113
+    a crm:E56_Language ;
+    rdfs:label "Chinese" .      
+aat:300388277 
+    a crm:E56_Language ;
+    rdfs:label "English" .
+aat:300404670
+    a crm:E55_Type ;
+    rdfs:label "Primary Name" .
+aat:300312355    
+    a crm:E55_Type ;
+    rdfs:label "Accession Number" .
+aat:300055644
+    a crm:E55_Type ;
+    rdfs:label "Height" .
+aat:300055647
+    a crm:E55_Type ;
+    rdfs:label "Width" .
+aat:300072633
+    a crm:E55_Type ;
+    rdfs:label "Depth" .
+aat:300379098 
+    a crm:E58_Measurement_Unit ;
+    rdfs:label "centimeters" .
+aat:300435416
+    a crm:E55_Type ;
+    rdfs:label "Description" .
+aat:300435443
+    a crm:E55_Type ;
+    rdfs:label "Type of Work" .
+aat:300028702
+    a crm:E55_Type ;
+    rdfs:label "inscriptions" .
+aat:300264578
+    a crm:E55_Type ;
+    rdfs:label "Web Page" .
+aat:300215302
+    a crm:E55_Type ;
+    rdfs:label "Digital Image" .
+aat:300056240
+    a crm:E55_Type ;
+    rdfs:label "weight" .
+aat:300379226
+    a crm:E55_Type ;
+    rdfs:label "kilograms" .
+aat:300055624 
+    a crm:E55_Type ;
+    rdfs:label "diameter" .
