@@ -1,0 +1,77 @@
+@prefix bs: <http://www.chod.net/bronze/schema>.
+@prefix bv:<http://www.chod.net/bronze/vocabulary/> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix owl: <http://www.w3.org/2002/07/owl>.
+
+bs:influenced_by
+    a rdf:Property;
+    rdfs:label "influenced by";
+    rdfs:comment "用于关联青铜器物件实体和其相关的流传事件实体";
+    rdfs:domain crm:E22_Human-Made_Object;
+    rdfs:range crm:E7_Activity;
+    owl:inverseOf bs:influenced .
+
+bs:influenced
+    a rdf:Property;
+    rdfs:label "influenced";
+    rdfs:range crm:E22_Human-Made_Object;
+    rdfs:domain crm:E7_Activity;
+    owl:inverseOf bs:influenced_by .
+
+bs:translation
+    a rdf:Property;
+    rdfs:label "translation";
+    rdfs:comment "用于描述对铭文的释文，可能表述为中文或外文";
+    rdfs:domain crm:E34_Inscription;
+    rdfs:range crm:E33_Linguistic_Object;
+    owl:inverseOf bs:translation_of .
+
+bs:translation_of
+    a rdf:Property;
+    rdfs:label "translation of";
+    rdfs:range crm:E34_Inscription;
+    rdfs:domain crm:E33_Linguistic_Object;
+    owl:inverseOf bs:translation.
+
+bs:inscribed_location
+    a rdf:Property;
+    rdfs:label "inscribed location";
+    rdfs:comment "用于表述铭文部分在青铜器物件的所处位置";
+    rdfs:domain bs:Inscription;
+    rdfs:range rdfs:Literal.
+
+bs:inscribed_part
+    a rdf:Property;
+    rdfs:label "inscribed part";
+    rdfs:comment "用于表述青铜器物件和其铭文部分之间的关系";
+    rdfs:domain crm:E33_Linguistic_Object;
+    rdfs:range bs:Inscription.
+
+bs:period
+    a rdf:Property;
+    rdfs:label "period";
+    rdfs:comment "用于表述青铜器物件所属文化朝代或断代情况";
+    rdfs:domain crm:E22_Human-Made_Object;
+    rdfs:range bv:period.     
+
+bs:in_pairs_of
+    a rdf:Property;
+    rdfs:label "in pairs of";
+    rdfs:comment "用于表述青铜器物件之间的成对关系";
+    rdfs:domain crm:E22_Human-Made_Object;
+    rdfs:range crm:E22_Human-Made_Object.    
+
+bs:Inscription
+    a rdfs:Class;
+    rdfs:label "Inscription";
+    rdfs:comment "用于针对性描述青铜器铭文部分";
+    rdfs:subClassOf  crm:E22_Human-Made_Object.
+
+bs:Excavation
+    a rdfs:Class;
+    rdfs:label "Excavation";
+    rdfs:comment "用于针对性描述青铜器流传事件中的出土相关事件";
+    rdfs:subClassOf  crm:E7_Activity.

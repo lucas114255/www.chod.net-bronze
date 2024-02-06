@@ -1,0 +1,495 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix bvp:<http://www.chod.net/bronze/vocabulary/period/> .
+@prefix bvt: <http://www.chod.net/bronze/vocabulary/type/>.
+@prefix aat: <http://vocab.getty.edu/aat/>.
+@prefix bvd: <http://bronzeoversea.com/vocabulary/decorations/>.
+@prefix bvs: <http://www.chod.net/bronze/vocabulary/subject/>.
+@prefix cit: <https://chineseiconography.org/terms/>.
+
+
+#断代分期取值列表
+<http://www.chod.net/bronze/vocabulary/period/> a skos:Concept ;
+    skos:prefLabel "断代分期取值"@zh ;
+    skos:narrower bvp:01,bvp:02,bvp:03,bvp:04,bvp:05,bvp:06,bvp:07,bvp:08,bvp:09,bvp:10.
+
+bvp:01 a skos:Concept ;
+    rdfs:label "夏";
+    rdfs:comment "禹~癸".
+
+bvp:02 a skos:Concept;
+    rdfs:label "早商或中商时期";
+    rdfs:comment "汤~盘庚（迁殷前）".
+
+bvp:03 a skos:Concept;
+    rdfs:label "晚商时期";
+    rdfs:comment "盘庚、小辛、小乙、武丁、祖庚、祖甲、廪辛、康丁、武乙、文丁、帝乙、帝辛".
+
+bvp:04 a skos:Concept;
+    rdfs:label "西周早期";
+    rdfs:comment "武、成、康、昭".
+
+bvp:05 a skos:Concept;
+    rdfs:label "西周中期";
+    rdfs:comment "穆、恭、懿、孝、夷".
+
+bvp:06 a skos:Concept;
+    rdfs:label "西周晚期";
+    rdfs:comment "厉、宣、幽".
+
+bvp:07 a skos:Concept;
+    rdfs:label "春秋".
+
+bvp:08 a skos:Concept;
+    rdfs:label "战国".
+
+bvp:09 a skos:Concept;
+    rdfs:label "秦代".
+
+bvp:10 a skos:Concept;
+    rdfs:label "汉代".
+
+
+#器型取值列表
+bvt:01 
+    a skos:Concept;
+    rdfs:label "鼎"@zh; 
+    skos:altLabel "Ding (ritual vessels)";
+    skos:exactMatch aat:300265807.
+
+bvt:02
+    a skos:Concept;
+    rdfs:label "豆"@zh; 
+    skos:altLabel "Dou";
+    skos:exactMatch aat:300265814.
+
+bvt:03
+    a skos:Concept;
+    rdfs:label "觚"@zh; 
+    skos:altLabel "Gu (ritual vessel)";
+    skos:exactMatch aat:300265819.
+
+bvt:04
+    a skos:Concept;
+    rdfs:label "簋"@zh; 
+    skos:altLabel "Gui";
+    skos:exactMatch aat:300265823.
+
+bvt:05
+    a skos:Concept;
+    rdfs:label "盉"@zh; 
+    skos:altLabel "He";
+    skos:exactMatch aat:300265824.
+
+bvt:06
+    a skos:Concept;
+    rdfs:label "斝"@zh; 
+    skos:altLabel "Jia";
+    skos:exactMatch aat:300265825.
+
+bvt:07
+    a skos:Concept;
+    rdfs:label "鑑"@zh; 
+    skos:altLabel "Jian";
+    skos:exactMatch aat:300265827.
+
+bvt:08
+    a skos:Concept;
+    rdfs:label "角"@zh; 
+    skos:altLabel "Jiao";
+    skos:exactMatch aat:300265828.
+
+bvt:09
+    a skos:Concept;
+    rdfs:label "爵"@zh; 
+    skos:altLabel "Jue";
+    skos:exactMatch aat:300265830.
+
+bvt:10
+    a skos:Concept;
+    rdfs:label "罍"@zh; 
+    skos:altLabel "Lei";
+    skos:exactMatch aat:300265831.
+
+bvt:11
+    a skos:Concept;
+    rdfs:label "盘/盤"@zh; 
+    skos:altLabel "Pan (ritual vessel)";
+    skos:exactMatch aat:300265834.
+
+bvt:12
+    a skos:Concept;
+    rdfs:label "瓿"@zh; 
+    skos:altLabel "Pou";
+    skos:exactMatch aat:300265842.
+
+bvt:13
+    a skos:Concept;
+    rdfs:label "盨"@zh; 
+    skos:altLabel "Xu";
+    skos:exactMatch aat:300265844.
+
+bvt:14
+    a skos:Concept;
+    rdfs:label "卣"@zh; 
+    skos:altLabel "You";
+    skos:exactMatch aat:300265848.
+
+bvt:15
+    a skos:Concept;
+    rdfs:label "盂"@zh; 
+    skos:altLabel "Yu (basin-shaped vessel)";
+    skos:exactMatch aat:300265847.
+
+bvt:16
+    a skos:Concept;
+    rdfs:label "甗"@zh; 
+    skos:altLabel "Yan";
+    skos:exactMatch aat:300265845.
+
+bvt:17
+    a skos:Concept;
+    rdfs:label "匜"@zh; 
+    skos:altLabel "Yi";
+    skos:exactMatch aat:300265846.
+
+bvt:18
+    a skos:Concept;
+    rdfs:label "尊"@zh; 
+    skos:altLabel "Zun";
+    skos:exactMatch aat:300265850.
+
+bvt:19
+    a skos:Concept;
+    rdfs:label "鬲"@zh; 
+    skos:altLabel "Li";
+    skos:exactMatch aat:901001.
+
+bvt:20
+    a skos:Concept;
+    rdfs:label "簠"@zh; 
+    skos:altLabel "Fu";
+    skos:exactMatch aat:901002.
+
+bvt:21
+    a skos:Concept;
+    rdfs:label "匕(礼器)"@zh; 
+    skos:altLabel "Bi (ritual vessels)";
+    skos:exactMatch aat:901004.
+
+bvt:22
+    a skos:Concept;
+    rdfs:label "敦"@zh; 
+    skos:altLabel "Dui";
+    skos:exactMatch aat:901003.
+
+bvt:23
+    a skos:Concept;
+    rdfs:label "觥"@zh; 
+    skos:altLabel "Gong";
+    skos:exactMatch aat:901007.
+
+bvt:24
+    a skos:Concept;
+    rdfs:label "觯"@zh; 
+    skos:altLabel "Zhi";
+    skos:exactMatch aat:901005.
+
+bvt:25
+    a skos:Concept;
+    rdfs:label "方彝"@zh; 
+    skos:altLabel "Fangyi";
+    skos:exactMatch aat:901006.
+
+bvt:26
+    a skos:Concept;
+    rdfs:label "壶（礼器）"@zh; 
+    skos:altLabel "Hu (ritual vessels)";
+    skos:exactMatch aat:901008.
+
+bvt:27
+    a skos:Concept;
+    rdfs:label "扁壶"@zh; 
+    skos:altLabel "Bianhu-flask".
+
+
+bvt:28
+    a skos:Concept;
+    rdfs:label "勺（礼器）"@zh; 
+    skos:altLabel "Shao (ritual vessels)";
+    skos:exactMatch aat:901010.
+
+bvt:29
+    a skos:Concept;
+    rdfs:label "缶"@zh; 
+    skos:altLabel "Fou";
+    skos:exactMatch aat:901009.
+
+bvt:30
+    a skos:Concept;
+    rdfs:label "钟（礼器）"@zh; 
+    skos:altLabel "Zhong (ritual vessels)";
+    skos:exactMatch aat:901017.
+
+bvt:31
+    a skos:Concept;
+    rdfs:label "镜"@zh; 
+    skos:altLabel "Mirrors";
+    skos:exactMatch aat:300037682.
+
+bvt:32
+    a skos:Concept;
+    rdfs:label "戈"@zh; 
+    skos:altLabel "Ge-dagger-ax".
+
+
+bvt:33
+    a skos:Concept;
+    rdfs:label "矛"@zh; 
+    skos:altLabel "Mao-spearhead";
+    skos:exactMatch aat:300037038.
+
+bvt:34
+    a skos:Concept;
+    rdfs:label "斧（工具）"@zh; 
+    skos:altLabel "Axes (tools)";
+    skos:exactMatch aat:300024664.
+
+bvt:35
+    a skos:Concept;
+    rdfs:label "斧（武器）"@zh; 
+    skos:altLabel "Axes (weapons)";
+    skos:exactMatch aat:300036982.
+
+bvt:36
+    a skos:Concept;
+    rdfs:label "戟"@zh; 
+    skos:altLabel "Halberds";
+    skos:exactMatch aat:300037010.
+
+bvt:37
+    a skos:Concept;
+    rdfs:label "钺"@zh; 
+    skos:altLabel "Yue-broadaxe".
+
+
+bvt:38
+    a skos:Concept;
+    rdfs:label "剑"@zh; 
+    skos:altLabel "Swords";
+    skos:exactMatch aat:300037048.
+
+bvt:39
+    a skos:Concept;
+    rdfs:label "带钩"@zh; 
+    skos:altLabel "Daigou-belthooks".
+
+
+bvt:40
+    a skos:Concept;
+    rdfs:label "装饰物"@zh; 
+    skos:altLabel "Ornaments";
+    skos:exactMatch aat:300266794.
+
+bvt:41
+    a skos:Concept;
+    rdfs:label "尖顶饰"@zh; 
+    skos:altLabel "Finials";
+    skos:exactMatch aat:300002280.
+
+bvt:42
+    a skos:Concept;
+    rdfs:label "禁"@zh; 
+    skos:altLabel "Jin".
+
+#纹饰取值列表
+<http://bronzeoversea.com/vocabulary/decorations> a skos:ConceptScheme ;
+    skos:hasTopConcept bvd:animal,
+                       bvd:geometric,
+                       bvd:portrait .
+
+#动物类纹饰
+bvd:animal 
+    a skos:Concept ;
+    skos:prefLabel "动物类纹饰"@zh ;
+    skos:narrower bvd:animal_taotie,
+                   bvd:animal_dragon,
+                   bvd:animal_snake,
+                   bvd:animal_bird,
+                   bvd:animal_dragonbird,
+                   bvd:animal_realistic,
+                   bvd:animal_simplified,
+                   bvd:animal_unknown .
+
+bvd:animal_taotie a skos:Concept ;
+    rdfs:label "饕餮纹"@zh ;
+    skos:altLabel  "兽面纹"@zh .
+
+bvd:animal_dragon a skos:Concept ;
+    rdfs:label "龙纹"@zh ;
+    skos:altLabel "夔纹"@zh,  "夔龙纹"@zh, "顾龙纹"@zh, "蟠龙纹"@zh, "团龙纹"@zh, "交龙纹"@zh, "蛟龙纹"@zh,"曲龙纹"@zh .
+
+bvd:animal_snake a skos:Concept ;
+    rdfs:label "蛇纹"@zh ;
+    skos:altLabel "蚕纹"@zh ,"蟠虺纹"@zh .
+
+bvd:animal_bird a skos:Concept ;
+    rdfs:label "鸟纹"@zh ;
+    skos:altLabel "凤鸟纹"@zh ,"小鸟纹"@zh, "大鸟纹"@zh, "长卷尾鸟纹"@zh, "鸱削纹"@zh, "飞禽纹"@zh .
+
+bvd:animal_dragonbird a skos:Concept ;
+    rdfs:label "龙首鸟身纹"@zh ;
+    skos:altLabel "夔凤纹"@zh .
+
+bvd:animal_realistic a skos:Concept ;
+    rdfs:label "其他写实性动物纹"@zh ;
+    skos:altLabel "象纹"@zh, "虎纹"@zh, "虎豹纹"@zh,"龟纹"@zh, "龟甲纹"@zh,"鱼纹"@zh, "犀纹"@zh, "蝉纹"@zh, "贝纹"@zh, "鹿纹"@zh, "兔纹"@zh, "蟾蜍纹"@zh .
+
+bvd:animal_simplified a skos:Concept ;
+    rdfs:label "简省变形动物纹"@zh ;
+    skos:altLabel "目纹"@zh, "鳞纹"@zh, "重环纹"@zh, "变形饕餮纹"@zh, "变形蝉纹"@zh, "窃曲纹"@zh,"窮曲纹"@zh,  
+                  "波带纹"@zh,"波曲纹"@zh,"波线纹"@zh,"环带纹"@zh,"山纹"@zh,"幛纹"@zh,
+                   "散蟠纹"@zh,  "散虺纹"@zh,  "栗纹"@zh,  "羽翅纹"@zh,  "状羽纹"@zh, 
+                   "双钩蟠螭示意纹"@zh, "直角填充式变形蟠螭纹"@zh .
+
+bvd:animal_unknown a skos:Concept ;
+    rdfs:label "不知名动物纹"@zh .
+
+#几何类纹饰
+bvd:geometric a skos:Concept ;
+    skos:prefLabel "几何类纹饰"@zh ;
+    skos:narrower bvd:geometric_circle,
+                   bvd:geometric_vortex,
+                   bvd:geometric_lightning,
+                   bvd:geometric_quadrifoliate,
+                   bvd:geometric_triangle,
+                   bvd:geometric_lattice,
+                   bvd:geometric_chord,
+                   bvd:geometric_twine,
+                   bvd:geomeitric_tile,
+                   bvd:geometric_flower .
+
+bvd:geometric_circle a skos:Concept ;
+    rdfs:label "圆圈纹"@zh ;
+    skos:altLabel "联珠纹"@zh, "乳钉纹"@zh .
+
+bvd:geometric_vortex a skos:Concept ;
+    rdfs:label "涡纹"@zh .
+bvd:geometric_lightening a skos:Concept ;
+    rdfs:label "云雷纹"@zh ;
+    skos:altLabel "云纹"@zh, "雷文"@zh, "回纹"@zh .
+
+bvd:geometric_quadrifoliate a skos:Concept ;
+    rdfs:label "四瓣目纹"@zh;
+    skos:altLabel  "四瓣花纹"@zh,"四叶纹"@zh.
+
+bvd:geometric_triangle
+    rdfs:label "三角纹"@zh.            
+
+bvd:geometric_lattice
+    rdfs:label "棱格纹"@zh.   
+
+bvd:geometric_chord
+    rdfs:label "弦纹"@zh.                   
+                   
+bvd:geometric_twine
+    rdfs:label "瓦纹"@zh;
+    skos:altLabel  "平行沟纹"@zh.   
+
+bvd:geomeitric_tile
+    rdfs:label "绹纹"@zh;
+    skos:altLabel  "绳状纹"@zh,"绳络纹"@zh.   
+
+bvd:geometric_flower 
+    rdfs:label "花形纹"@zh.   
+
+#人物画像类纹饰
+bvd:portrait 
+    rdfs:label "人物画像类纹饰"@zh .
+
+
+#造型主题取值列表
+bvs:01 
+    a skos:Concept;
+    rdfs:label "Animal"; 
+    skos:altLabel "动物"@zh;
+    skos:exactMatch aat:300386044.
+
+bvs:02
+    a skos:Concept;
+    rdfs:label "Elephant"; 
+    skos:altLabel "象"@zh;
+    skos:exactMatch aat:300250160.
+
+bvs:03
+    a skos:Concept;
+    rdfs:label "Tiger"; 
+    skos:altLabel "虎"@zh;
+    skos:exactMatch aat:300249063.
+
+bvs:04
+    a skos:Concept;
+    rdfs:label "Bird"; 
+    skos:altLabel "鸟/禽"@zh;
+    skos:exactMatch aat:300250065.
+
+bvs:05
+    a skos:Concept;
+    rdfs:label "Serpentes"; 
+    skos:altLabel "蛇"@zh;
+    skos:exactMatch aat:300250870.
+
+bvs:06
+    a skos:Concept;
+    rdfs:label "Insect"; 
+    skos:altLabel "昆虫"@zh;
+    skos:exactMatch aat:300310470.
+
+bvs:07
+    a skos:Concept;
+    rdfs:label "Human"; 
+    skos:altLabel "人"@zh;
+    skos:exactMatch aat:300265711.
+
+bvs:08
+    a skos:Concept;
+    rdfs:label "Cervid"; 
+    skos:altLabel "鹿"@zh;
+    skos:exactMatch aat:300250308.
+
+bvs:09
+    a skos:Concept;
+    rdfs:label "Sheep"; 
+    skos:altLabel "羊"@zh;
+    skos:exactMatch aat:300404156.
+
+bvs:10
+    a skos:Concept;
+    rdfs:label "Cicada"; 
+    skos:altLabel "蝉"@zh;
+    skos:exactMatch aat:300250232.
+
+bvs:11
+    a skos:Concept;
+    rdfs:label "Monster"; 
+    skos:altLabel "精怪"@zh;
+    skos:exactMatch cit:289119.
+
+bvs:12
+    a skos:Concept;
+    rdfs:label "Mythical figure/creature"; 
+    skos:altLabel "神话传说生物"@zh;
+    skos:exactMatch cit:0359574.
+
+bvs:13
+    a skos:Concept;
+    rdfs:label "Dragon"; 
+    skos:altLabel "龙"@zh;
+    skos:exactMatch aat:300375726.
+
+bvs:14
+    a skos:Concept;
+    rdfs:label "Taotie"; 
+    skos:altLabel "饕餮"@zh;
+    skos:exactMatch cit:0313367.
+

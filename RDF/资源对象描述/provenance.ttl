@@ -1,0 +1,1576 @@
+@prefix bp: <http://www.chod.net/bronze/provenance/>.
+@prefix bs: <http://www.chod.net/bronze/schema/>.
+@prefix bo: <http://www.chod.net/bronze/objects/>.
+@prefix ba: <http://www.chod.net/bronze/agents/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix tgn: <http://vocab.getty.edu/page/tgn/>.
+@prefix sci: <http://www.ics.forth.gr/isl/CRMsci/> .
+
+# 编号01 康侯簋流传事件
+bp:01
+    a crm:E7_Activity ;
+    rdfs:label "康侯簋流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:001;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南省汲县，浚县，辉县一带" ;
+            la:equivalent tgn:8632102, tgn:8679579, tgn:8204817] 
+    ].
+
+# 编号02 天尹钟流传事件
+bp:02
+    a crm:E7_Activity ;
+    rdfs:label "天尹钟流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:002;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南省洛阳市" ;
+            la:equivalent tgn:8627225] 
+    ].
+
+# 编号03 弔龜斧流传事件
+bp:03
+    a crm:E7_Activity ;
+    rdfs:label "弔龜斧流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:033;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南省安阳市" ;
+            la:equivalent tgn:8212548] 
+    ].
+
+# 编号04 戈鼎流传事件
+bp:04
+    a crm:E7_Activity ;
+    rdfs:label "戈鼎流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:041;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+            [   a crm:E52_Time-Span ;
+                rdfs:label "丙戌三月" ;
+                crm:P82a_begin_of_the_begin "1886-03-01T00:00:00Z" ;
+                crm:P82b_end_of_the_end "1886-03-31T00:00:00Z"  ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "江苏省扬州市邗江区邗上街道邗上村" ;
+            la:equivalent tgn:8203245] 
+    ]. 
+
+# 编号05 善鼎流传事件
+bp:05
+    a crm:E7_Activity ;
+    rdfs:label "善鼎流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:042;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "陕西省西安市长安区" ;
+            la:equivalent tgn:8677590] 
+    ].
+
+# 编号06 弔父丁壶流传事件
+bp:06
+    a crm:E7_Activity ;
+    rdfs:label "弔父丁壶流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:049;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P2_has_type aat:300160022;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label  "Edgar Worch" 
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label  "before 1929" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Berlin" ;
+            la:equivalent tgn:7003670] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P22_transferred_title_to ba:03 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label  "Edgar Worch" 
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1929-03-07" ] ;
+        crm:P24_transferred_title_of bo:049
+    ],
+    [   a la:Payment ;
+        la:paid_amount 
+            [   a crm:E97_Monetary_Amount ;
+                rdfs:label "$22500" ;
+                crm:P180_has_currency aat:300411994 ;
+                crm:P90_has_value 22500
+            ] ;
+        la:paid_from  ba:03;
+        la:paid_to
+            [   a crm:E21_Person;
+                rdfs:label  "Edgar Worch" 
+            ]
+    ].
+
+# 编号07 中姞鬲流传事件
+bp:07
+    a crm:E7_Activity ;
+    rdfs:label "中姞鬲流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:050;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "光绪16年";
+            crm:P82a_begin_of_the_begin  "1890" ;
+            crm:P82b_end_of_the_end "1890"
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "陕西省宝鸡市扶风县法门镇任家村" ;
+            la:equivalent tgn:7001798] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P22_transferred_title_to ba:03 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label  "Shêng Pai-his" 
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1912" ] ;
+        crm:P14_carried_out_by
+        [   a crm:E21_Person ;
+            rdfs:label "Mr. Okakura" 
+        ];
+        crm:P24_transferred_title_of bo:050
+    ].
+
+# 编号08 鲁侯熙鬲流传事件
+bp:08
+    a crm:E7_Activity ;
+    rdfs:label "鲁侯熙鬲流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:051;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1926" ;
+            crm:P82b_end_of_the_end "1928"] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "陕西省宝鸡市金台区戴家湾村" ;
+            la:equivalent tgn:8109917] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to ba:03 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label  "Kojiro Tomita" 
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1947-03-13T00:00:00Z"
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567]; 
+        crm:P14_carried_out_by
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:051
+    ],
+    [   a la:Payment ;
+        la:paid_amount 
+            [   a crm:E97_Monetary_Amount ;
+                rdfs:label "$5500" ;
+                crm:P180_has_currency aat:300411994 ;
+                crm:P90_has_value 5500
+            ] ;
+        la:paid_from  ba:03;
+        la:paid_to
+            [   a crm:E21_Person;
+                rdfs:label  "Kojiro Tomita" 
+            ]
+    ].
+
+# 编号09 父辛簋流传事件
+bp:09
+    a crm:E7_Activity ;
+    rdfs:label "父辛簋流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:052;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1912" ] ;
+        crm:P14_carried_out_by
+        [   a crm:E21_Person ;
+            rdfs:label "Mr. Okakura" ;
+        ];
+        crm:P24_transferred_title_of bo:052
+    ].
+
+# 编号10 頍方彝流传事件
+bp:10
+    a crm:E7_Activity ;
+    rdfs:label "頍方彝流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:053;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1940-01-11T00:00:00Z"
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ] ;
+        crm:P23_transferred_title_from
+        [   a crm:E74_Group ;
+            rdfs:label "Tonying and Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P22_transferred_title_to ba:03;
+        crm:P24_transferred_title_of bo:053
+    ],
+    [   a la:Payment ;
+        la:paid_amount 
+            [   a crm:E97_Monetary_Amount ;
+                rdfs:label "$10,000" ;
+                crm:P180_has_currency aat:300411994 ;
+                crm:P90_has_value 10000
+            ] ;
+        la:paid_from  ba:03;
+        la:paid_to
+        [   a crm:E74_Group ;
+            rdfs:label "Tonying and Company" ;
+            crm:P2_has_type aat:300160084
+        ]
+    ].
+
+# 编号11 黽甗流传事件
+bp:11
+    a crm:E7_Activity ;
+    rdfs:label "黽甗流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:054;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1912-05-01T00:00:00Z" 
+        ] ;
+        crm:P22_transferred_title_to ba:03;
+        crm:P23_transferred_title_from
+        [   a crm:E21_Person;
+            rdfs:label  "Shêng Pai-his" 
+        ] ;
+        crm:P14_carried_out_by
+        [   a crm:E21_Person ;
+            rdfs:label "Mr. Okakura" ;
+        ];
+        crm:P24_transferred_title_of bo:054
+    ]
+.
+
+# 编号12 且丁簋流传事件
+bp:12
+    a crm:E7_Activity ;
+    rdfs:label "且丁簋流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:056;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1934-02-01T00:00:00Z" 
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Boston" ;
+            la:equivalent tgn:7013445
+        ] ;
+        crm:P22_transferred_title_to ba:03 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label  "Francis Lee Higginson" 
+        ] ;
+        crm:P14_carried_out_by
+        [   a crm:E74_Group ;
+            rdfs:label "Yamanaka and Co." ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:056
+    ]
+.
+
+# 编号13 鄉宁尊流传事件
+bp:13
+    a crm:E7_Activity ;
+    rdfs:label "鄉宁尊流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:057;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1930" ;
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南省安阳市" ;
+            la:equivalent tgn:8212548
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P22_transferred_title_to ba:03 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label  "Francis Lee Higginson" 
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1934-02-01T00:00:00Z"
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Boston" ;
+            la:equivalent tgn:7013445
+        ] ;
+        crm:P14_carried_out_by
+        [   a crm:E21_Person ;
+            rdfs:label "Yamanaka and Co." ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:057
+    ]
+.
+
+# 编号14 公乘壶流传事件
+bp:14
+    a crm:E7_Activity ;
+    rdfs:label "公乘壶流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:060;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label  "1912" ] ;
+        crm:P22_transferred_title_to ba:03;
+        crm:P14_carried_out_by
+        [   a crm:E21_Person ;
+            rdfs:label "Mr. Okakura" ;
+        ];
+        crm:P24_transferred_title_of bo:060
+    ]
+.
+
+# 编号15 柉禁流传事件
+bp:15
+    a crm:E7_Activity ;
+    rdfs:label "柉禁流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:062,bo:063,bo:064,bo:065,bo:066,bo:067,bo:068,bo:069,bo:070,bo:071,bo:072,bo:073,bo:074,bo:075,bo:076;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label  "1901" 
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Doujitai, Baoji, Shaanxi Province, China" ;
+            la:equivalent tgn:8109917] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1911"
+        ];
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person ;
+            rdfs:label "端方（Duan Fang）" 
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1911"
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E74_Group ;
+            rdfs:label "端方家族（the Duan Fang family）" 
+        ];
+        crm:P23_transferred_title_from  
+        [   a crm:E21_Person ;
+            rdfs:label "端方（Duan Fang）" 
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1924"
+        ];
+        crm:P22_transferred_title_to ba:04 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group ;
+            rdfs:label "端方家族（the Duan Fang family）" 
+        ];
+        crm:P14_carried_out_by
+        [   a crm:E21_Person ;
+            rdfs:label "John C. Ferguson （福开森）" ;
+        ]
+    ]
+.
+
+# 编号16 齐侯敦流传事件
+bp:16
+    a crm:E7_Activity ;
+    rdfs:label "齐侯敦流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:077;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "光绪十九年" ;
+            crm:P82a_begin_of_the_begin  "1893" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河北省易县" ;
+            la:equivalent tgn:8678861] 
+    ]
+.
+
+# 编号17 齐侯盘流传事件
+bp:17
+    a crm:E7_Activity ;
+    rdfs:label "齐侯盘流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:078;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "光绪十九年" ;
+            crm:P82a_begin_of_the_begin  "1893" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河北省易县" ;
+            la:equivalent tgn:8678861] 
+    ]
+.
+
+# 编号18 齐侯匜流传事件
+bp:18
+    a crm:E7_Activity ;
+    rdfs:label "齐侯匜流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:079;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河北省易县" ;
+            la:equivalent tgn:8678861] 
+    ]
+.
+
+# 编号19 亚舟鼎流传事件
+bp:19
+    a crm:E7_Activity ;
+    rdfs:label "亚舟鼎流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:086;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南省安阳市" ;
+            la:equivalent tgn:8212548] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "April 1941"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:086
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1946-10-31T00:00:00Z"
+        ];
+        crm:P22_transferred_title_to ba:05;
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:086
+    ].
+
+bp:20
+    a crm:E7_Activity ;
+    rdfs:label "大保簋的流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:087;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P1_is_identified_by
+        [   a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "梁山七器出土" ;
+            crm:P72_has_language aat:300388113;
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label  "清朝（咸丰年间）" ;
+            la:equivalent aat:300018478] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "山东（寿张县梁山）" ;
+            la:equivalent tgn:8630381] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label  "钟养田（Zhong Yangtian）" 
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "山东济宁" ;
+            la:equivalent tgn:8623344] ;
+        crm:P24_transferred_title_of bo:087
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label "李宗岱（Li Zongdai）"  
+        ]  ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label  "钟养田（Zhong Yangtian）" 
+        ];
+        crm:P24_transferred_title_of bo:087
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label "溥伦（Pulun）" 
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "李宗岱（Li Zongdai）"  
+        ]  ;
+        crm:P24_transferred_title_of bo:087
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label "黄君（Huang Jun）"
+        ] ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "溥伦（Pulun）" 
+        ];
+        crm:P24_transferred_title_of bo:087
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label "丁氏（Ding）"
+        ] ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "黄君（Huang Jun）"
+        ] ;
+        crm:P24_transferred_title_of bo:087;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "山东潍坊" ;
+            la:equivalent tgn:8676690] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label "Marcel Bing" 
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "丁氏（Ding）"
+        ] ;
+        crm:P24_transferred_title_of bo:087;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label " Paris" ;
+            la:equivalent tgn:7008038] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1915" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567] ;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label "Eugene Meyer and Agnes E. Meyer"
+        ]  ;
+        crm:P23_transferred_title_from
+        [   a crm:E21_Person;
+            rdfs:label "Marcel Bing" 
+        ];
+        crm:P24_transferred_title_of bo:087 ;
+        crm:P14_carried_out_by 
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo, Lai Yuan & Co";
+            crm:P2_has_type aat:300160084
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1959-07-17";
+            crm:P82a_begin_of_the_begin "1959-07-17T00:00:00Z" ;
+            crm:P82b_end_of_the_end "1959-07-17T00:00:00Z"  ] ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label "Agnes E. Meyer" 
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "Eugene Meyer"
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label   "1961" ] ;
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "Eugene Meyer and Agnes E. Meyer"
+        ]  
+    ].
+
+# 编号21 亦車簋流传事件
+bp:21
+    a crm:E7_Activity ;
+    rdfs:label "亦車簋流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:088;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label  "April 1941"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E74_Group  ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:088
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1941-06-18T00:00:00Z"
+        ];
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group  ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:088
+    ]
+.
+
+# 编号22 史楳簋流传事件
+bp:22
+    a crm:E7_Activity ;
+    rdfs:label "史楳簋流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:089;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1915"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Paris" ;
+            la:equivalent tgn:7008038
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person ;
+            rdfs:label "Marcel Bing" 
+        ];
+        crm:P24_transferred_title_of bo:089
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1915-12-01T00:00:00Z"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person ;
+            rdfs:label "Eugene Meyer and Agnes E. Meyer" 
+        ];
+        crm:P23_transferred_title_from
+        [   a crm:E21_Person ;
+            rdfs:label "Marcel Bing" 
+        ];
+        crm:P14_carried_out_by
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo, Lai Yuan & Co" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:089
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1915-12-14T00:00:00Z"
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person ;
+            rdfs:label "Charles Lang Freer" 
+        ];
+        crm:P23_transferred_title_from
+        [   a crm:E21_Person ;
+            rdfs:label "Eugene Meyer " 
+        ];
+        crm:P24_transferred_title_of bo:089
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1920"
+        ];
+        crm:P22_transferred_title_to ba:05;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person ;
+            rdfs:label "Charles Lang Freer" 
+        ];
+        crm:P24_transferred_title_of bo:089
+    ]
+.
+
+#23伯者父簋(090)流传事件
+bp:23
+    a crm:E7_Activity ;
+    rdfs:label "伯者父簋的流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:090;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E74_Group;
+            rdfs:label  "Otto Burchard & Co." ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Berlin" ;
+            la:equivalent tgn:7003670
+        ] ;
+        crm:P24_transferred_title_of bo:090;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1935" 
+        ] 
+    ],
+    bp:23_PurchaseViaLot275,
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1937/11/1" 
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ],
+        [   a crm:E53_Place ;
+            rdfs:label " Paris" ;
+            la:equivalent tgn:7008038 
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E74_Group;
+            rdfs:label "C. T. Loo & Company";
+            crm:P2_has_type aat:300160084
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label  "September 29, 1938";
+            crm:P82a_begin_of_the_begin "1938-12-29T00:00:00Z" ;
+            crm:P82b_end_of_the_end "1938-12-29T00:00:00Z"  
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ];
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group;
+            rdfs:label "C. T. Loo & Company";
+            crm:P2_has_type aat:300160084
+        ] 
+    ].
+
+bp:23_PurchaseViaLot275
+    a crm:E7_Activity ;
+    rdfs:label "Purchase via Lot 275";
+    crm:P2_has_type aat:300055863;
+    crm:P16_used_specific_object bp:23_Set;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition ;
+        rdfs:label "Acquisition via Lot 275" ;
+        crm:P22_transferred_title_to
+        [   a crm:E21_Person;
+            rdfs:label "Hans Georg Oeder" 
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group;
+            rdfs:label  "Otto Burchard & Co." ;
+            crm:P2_has_type aat:300160084
+        ]; 
+        crm:P14_carried_out_by 
+        [   a crm:E21_Person;
+           rdfs:label "Arthur Abt ";
+        ];
+        crm:P24_transferred_title_of bo:090
+    ].
+
+bp:23_AuctionOfLot275
+    a crm:E7_Activity ;
+    rdfs:label "Auction of Lot 275" ;
+    crm:P2_has_type aat:300420001 ;
+    crm:P14_carried_out_by 
+    [   a crm:E21_Person ;
+        rdfs:label "Paul Graupe" 
+    ] ;
+    crm:P16_used_specific_object bp:23_Set;
+    crm:P9i_forms_part_of 
+    [   a crm:E7_Activity ;
+        rdfs:label " Liquidation: Chinesische Kunst: I. Teil" ;
+        crm:P2_has_type aat:300054751 ;
+        crm:P4_has_time-span 
+        [   a crm:E52_Time-Span ;
+            rdfs:label "March 22, 1935" ;
+            crm:P82a_begin_of_the_begin "1935-03-22T00:00:00Z" ;
+            crm:P82b_end_of_the_end "1935-03-22T00:00:00Z" 
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Berlin" ;
+            la:equivalent tgn:7003670
+        ]
+    ] ;
+    sci:O13_triggers bp:23_PurchaseViaLot275.
+
+bp:23_Set
+    a la:Set ;
+    rdfs:label "Set of Objects for Lot 275" ;
+    crm:P2_has_type aat:300411307 ;
+    crm:P1_is_identified_by 
+    [   a crm:E42_Identifier ;
+        crm:P190_has_symbolic_content "275" ;
+        crm:P2_has_type aat:300404628 
+    ];
+    la:has_member bo:090.
+
+# 编号24 士上盉流传事件
+bp:24
+    a crm:E7_Activity ;
+    rdfs:label "士上盉流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:091;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1928"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南省洛阳市邙山马坡" ;
+            la:equivalent tgn:8593702
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1933"
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E74_Group ;
+            rdfs:label "Tonying and Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:091
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1933"
+        ];
+        crm:P22_transferred_title_to ba:05;
+        crm:P23_transferred_title_from
+        [   a crm:E74_Group ;
+            rdfs:label "Tonying and Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:091
+    ]
+.
+
+# 编号25 亚獏父丁尊流传事件
+bp:25
+    a crm:E7_Activity ;
+    rdfs:label "亚獏父丁尊流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:092;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1941-11-01T00:00:00Z"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:092
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1943-12-08T00:00:00Z"
+        ];
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:092
+    ]
+.
+
+# 编号26 车涉觚流传事件
+bp:26
+    a crm:E7_Activity ;
+    rdfs:label "车涉觚流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:093;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1941-11-01T00:00:00Z"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:093
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1943-12-08T00:00:00Z"
+        ];
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:093
+    ]
+.
+
+# 编号27 毌得觚流传事件
+bp:27
+    a crm:E7_Activity ;
+    rdfs:label "毌得觚流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:094;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南安阳" ;
+            la:equivalent tgn:8212548
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1940"
+        ];
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from
+        [   a crm:E21_Person ;
+            rdfs:label "T. Mori" 
+        ];
+        crm:P14_carried_out_by 
+        [   a crm:E21_Person ;
+            rdfs:label "George Abo"
+        ];
+        crm:P24_transferred_title_of bo:094
+    ]
+.
+
+# 编号28 永盂流传事件
+bp:28
+    a crm:E7_Activity ;
+    rdfs:label "永盂流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:095;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "陕西省宝鸡市岐山县" ;
+            la:equivalent tgn:8628441
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1937"
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E74_Group ;
+            rdfs:label "Tonying and Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:095
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1937"
+        ];
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from
+        [   a crm:E74_Group ;
+            rdfs:label "Tonying and Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:095
+    ]
+.
+
+# 编号29 智君子鑑流传事件
+bp:29
+    a crm:E7_Activity ;
+    rdfs:label "智君子鑑流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:096;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1938"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南省辉县" ;
+            la:equivalent tgn:8204817
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1938-12-30T00:00:00Z"
+        ];
+        crm:P22_transferred_title_to
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:096
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1939-02-03T00:00:00Z"
+        ];
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from
+        [   a crm:E74_Group ;
+            rdfs:label "C. T. Loo & Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P24_transferred_title_of bo:096
+    ]
+.
+
+# 编号30 作冊夨令方彝流传事件
+bp:30
+    a crm:E7_Activity ;
+    rdfs:label "作冊夨令方彝流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:097;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1929"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南省洛阳市西工区邙山镇马坡村" ;
+            la:equivalent tgn:8593702
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P22_transferred_title_to  
+        [   a crm:E74_Group  ;
+            rdfs:label "Tonying and Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1930"
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group  ;
+            rdfs:label "Tonying and Company" ;
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1930"
+        ] 
+    ]
+.
+
+# 编号31 少虡剑流传事件
+bp:31
+    a crm:E7_Activity ;
+    rdfs:label "少虡剑流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:098;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "山西省武乡县大有乡李峪村" ;
+            la:equivalent tgn:8676733
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P22_transferred_title_to  
+        [   a crm:E21_Person ;
+            rdfs:label "Edgar Worch" 
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Berlin" ;
+            la:equivalent tgn:7003670
+        ];
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1929"
+        ] 
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P22_transferred_title_to ba:05 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person ;
+            rdfs:label "Edgar Worch" 
+        ];
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1937"
+        ] 
+    ]
+.
+
+bp:32
+    a crm:E7_Activity ;
+    rdfs:label "羊父庚鼎流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:099;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label  "Qianlong Emperor (乾隆)" 
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Forbidden City, China" ;
+            la:equivalent tgn:8061551] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label  "Prince Pulun (溥伦),Senior Grandson of Daoguang Emperor" 
+        ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Forbidden City, China" ;
+            la:equivalent tgn:8061551] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E74_Group;
+            rdfs:label "C. T. Loo & Company";
+            crm:P2_has_type aat:300160084
+        ];
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1924" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "Paris, New York" ;
+            la:equivalent tgn:7008038, tgn:7007567] 
+    ],
+    [   a crm:E10_Transfer_of_Custody ;
+        crm:P29_transferred_custody_to 
+        [   a crm:E74_Group;
+            rdfs:label "C. T. Loo, INC.";
+            crm:P2_has_type aat:300160084 
+        ] ;
+        crm:P28_transferred_custody_from 
+        [   a crm:E74_Group;
+            rdfs:label "C. T. Loo & Company";
+            crm:P2_has_type aat:300160084
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1948" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567] 
+    ],
+    [   a crm:E10_Transfer_of_Custody ;
+        crm:P29_transferred_custody_to 
+        [   a crm:E74_Group;
+            rdfs:label "C. T. Loo Chinese Art, INC.";
+            crm:P2_has_type aat:300160084  
+        ] ;
+        crm:P28_transferred_custody_from 
+        [   a crm:E74_Group;
+            rdfs:label "C. T. Loo, INC." ;
+            crm:P2_has_type aat:300160084
+        ] ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1953" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E74_Group;
+            rdfs:label "Frank Caro Chinese Art" ;
+            crm:P2_has_type aat:300160084 
+        ]  ;
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group;
+            rdfs:label "C. T. Loo Chinese Art, INC." ;
+            crm:P2_has_type aat:300160084 
+        ]  ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1961" ] ;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567] 
+    ],
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to 
+        [   a crm:E21_Person;
+            rdfs:label "Arthur M. Sackler"
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group;
+            rdfs:label "Frank Caro Chinese Art" ;
+            crm:P2_has_type aat:300160084 
+        ]  ;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1987-09-11" ] 
+    ],   
+    [   a crm:E8_Acquisition ;
+        crm:P22_transferred_title_to ba:06 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E21_Person;
+            rdfs:label "Arthur M. Sackler"
+        ];
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin  "1987-09-11" ] 
+    ].
+
+# 编号33 戈父戊甗流传事件
+bp:33
+    a crm:E7_Activity ;
+    rdfs:label "戈父戊甗流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:100;
+    crm:P9_consists_of 
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "before 1975"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ];
+        crm:P22_transferred_title_to 
+        [   a crm:E74_Group ;
+            rdfs:label "J.T. Tai & Co., Inc." ;
+            crm:P2_has_type aat:300160084
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1975"
+        ];
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "New York" ;
+            la:equivalent tgn:7007567
+        ];
+        crm:P22_transferred_title_to 
+        [   a crm:E74_Group ;
+            rdfs:label "The Arthur M. Sackler Foundation" 
+        ];
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group ;
+            rdfs:label "J.T. Tai & Co., Inc." ;
+            crm:P2_has_type aat:300160084
+        ]
+    ],
+    [   a crm:E8_Acquisition;
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "1987"
+        ];
+        crm:P22_transferred_title_to ba:06 ;
+        crm:P23_transferred_title_from 
+        [   a crm:E74_Group ;
+            rdfs:label "Arthur M. Sackler Foundation" 
+        ]
+    ]
+.
+
+# 编号34 膳夫克盨流传事件
+bp:34
+    a crm:E7_Activity ;
+    rdfs:label "膳夫克盨流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:106;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "陕西省宝鸡市扶风县法门镇任家村" ;
+            la:equivalent tgn:7001798
+        ];
+        crm:P4_has_time-span
+        [   a crm:E52_Time-Span ;
+            rdfs:label "光緒16年(1890)"
+        ] 
+    ]
+.
+
+# 编号35 荣子方彝流传事件
+bp:35
+    a crm:E7_Activity ;
+    rdfs:label "荣子方彝流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:112;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南省洛阳市" ;
+            la:equivalent tgn:8627225
+        ] 
+    ]
+.
+
+# 编号36 罍流传事件
+bp:36
+    a crm:E7_Activity ;
+    rdfs:label "罍流传事件" ;
+    crm:P2_has_type aat:300055863;
+    bs:influenced bo:115;
+    crm:P9_consists_of 
+    [   a bs:Excavation;
+        crm:P2_has_type aat:300053702;
+        crm:P7_took_place_at 
+        [   a crm:E53_Place ;
+            rdfs:label "河南安阳" ;
+            la:equivalent tgn:8212548
+        ] 
+    ]
+.
+
+aat:300160084
+    a crm:E55_Type ;
+    rdfs:label "companies" .
+
+aat:300055863
+    a crm:E55_Type ;
+    rdfs:label "Provenance Activity" .
+
+aat:300053702
+    a crm:E55_Type ;
+    rdfs:label "excavation" .
+
+aat:300018478
+    a crm:E55_Type ;
+    rdfs:label "Qing" .
+
+tgn:7002085   
+    a crm:E55_Type ;
+    rdfs:label "Shandong (province)" .
+
+tgn:8623344
+    a crm:E55_Type ;
+    rdfs:label "Jining (second level subdivision)" .
+
+tgn:7008038
+    a crm:E55_Type ;
+    rdfs:label "Paris" .
+
+tgn:7013962
+    a crm:E55_Type ;
+    rdfs:label "Washington" .
+
+tgn:7007567
+    a crm:E55_Type ;
+    rdfs:label "New York" .
+
+aat:300411994
+    a crm:E55_Type ;
+    rdfs:label "United States dollar" .
+
+aat:300404628 
+    a crm:E55_Type ;
+    rdfs:label "Lot Number" .
+
+aat:300411307
+    a crm:E55_Type ;
+    rdfs:label "Auction Lots" .
+
+aat:300420001
+    a crm:E55_Type ;
+    rdfs:label "Auction of Lot" .
+
+aat:300054751
+    a crm:E55_Type ;
+    rdfs:label "Auction Event" .
