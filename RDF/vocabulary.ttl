@@ -327,6 +327,7 @@ bvd:animal_taotie a skos:Concept ;
 
 bvd:animal_dragon a skos:Concept ;
     rdfs:label "龙纹"@zh ;
+    skos:exactMatch cit:284420;
     skos:altLabel "夔纹"@zh,  "夔龙纹"@zh, "顾龙纹"@zh, "蟠龙纹"@zh, "团龙纹"@zh, "交龙纹"@zh, "蛟龙纹"@zh,"曲龙纹"@zh .
 
 bvd:animal_snake a skos:Concept ;
@@ -371,12 +372,17 @@ bvd:geometric a skos:Concept ;
 
 bvd:geometric_circle a skos:Concept ;
     rdfs:label "圆圈纹"@zh ;
+    skos:exactMatch cit:281481;
     skos:altLabel "联珠纹"@zh, "乳钉纹"@zh .
 
 bvd:geometric_vortex a skos:Concept ;
-    rdfs:label "涡纹"@zh .
-bvd:geometric_lightening a skos:Concept ;
+    rdfs:label "涡纹"@zh 
+    skos:exactMatch cit:281692;
+    skos:altLabel "圆涡纹"@zh.
+
+bvd:geometric_cloud a skos:Concept ;
     rdfs:label "云雷纹"@zh ;
+    skos:exactMatch cit:283518;
     skos:altLabel "云纹"@zh, "雷文"@zh, "回纹"@zh .
 
 bvd:geometric_quadrifoliate a skos:Concept ;

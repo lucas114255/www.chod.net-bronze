@@ -2180,7 +2180,7 @@ bo:036
             crm:P2_has_type bvd:geometric_circle ; 
             rdfs:label "纹饰：乳钉纹" ] , 
         [ a crm:E36_Visual_Item ;
-            crm:P2_has_type bvd:geometric_lightening  ; 
+            crm:P2_has_type bvd:geometric_cloud  ; 
             rdfs:label "纹饰：雷纹" ] , 
         [ a crm:E36_Visual_Item ;
             crm:P2_has_type bvd:animal_dragon  ; 
@@ -2270,7 +2270,7 @@ bo:037
             crm:P2_has_type bvs:13 ; 
             rdfs:label "造型主题： Dragon" ],
         [ a crm:E36_Visual_Item ;
-            crm:P2_has_type bvd:geometric_lightening  ; 
+            crm:P2_has_type bvd:geometric_cloud  ; 
             rdfs:label "纹饰：云纹" ] , 
         [ a crm:E36_Visual_Item ;
             crm:P2_has_type bvd:animal_dragon  ; 
@@ -2669,7 +2669,7 @@ bo:43
             crm:P2_has_type bvs:14  ; 
             rdfs:label "造型主题：Taotie" ],
         [ a crm:E36_Visual_Item ;
-            crm:P2_has_type bvd:geometric_lightening  ; 
+            crm:P2_has_type bvd:geometric_cloud  ; 
             rdfs:label "纹饰：雷纹" ]  ;
     crm:P67i_is_referred_to_by
         [ a crm:E33_Linguistic_Object ;
@@ -2819,7 +2819,7 @@ bo:045
             crm:P2_has_type bvs:10 ; 
             rdfs:label "造型主题：Cicada" ] ,
         [ a crm:E36_Visual_Item ;
-            crm:P2_has_type bvd:geometric_lightening ; 
+            crm:P2_has_type bvd:geometric_cloud ; 
             rdfs:label "纹饰：雷纹" ] ;
     bs:inscribed_part bo:InscribedPartOfObject045 ;  
     crm:P67i_is_referred_to_by bso:07;  
@@ -2899,7 +2899,7 @@ bo:046
             crm:P2_has_type bvs:14  ; 
             rdfs:label "造型主题：Taotie" ],
         [ a crm:E36_Visual_Item ;
-            crm:P2_has_type bvd:geometric_lightening ; 
+            crm:P2_has_type bvd:geometric_cloud ; 
             rdfs:label "纹饰：雷纹" ] ;
     bs:inscribed_part bo:InscribedPartOfObject046 ;  
     crm:P67i_is_referred_to_by bso:07 ;  
@@ -2974,7 +2974,7 @@ bo:047
             crm:P2_has_type bvd:animal_bird ; 
             rdfs:label "纹饰：鸟纹" ],
         [ a crm:E36_Visual_Item ;
-            crm:P2_has_type bvd:geometric_lightening ; 
+            crm:P2_has_type bvd:geometric_cloud ; 
             rdfs:label "纹饰：云纹" ] ,
         [ a crm:E36_Visual_Item ;
             crm:P2_has_type bvd:geometric_flower ; 
@@ -3039,7 +3039,7 @@ bo:048
             crm:P2_has_type bvd:animal_bird ; 
             rdfs:label "纹饰：鸟纹" ],
         [ a crm:E36_Visual_Item ;
-            crm:P2_has_type bvd:geometric_lightening ; 
+            crm:P2_has_type bvd:geometric_cloud ; 
             rdfs:label "纹饰：云纹" ] ,
         [ a crm:E36_Visual_Item ;
             crm:P2_has_type bvd:geometric_flower ; 
